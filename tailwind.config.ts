@@ -14,9 +14,8 @@ const config = {
   theme: {
     container: {
       center: true,
-      padding: '2rem',
       screens: {
-        '2xl': '1400px',
+        xl: '1024px',
       },
     },
     extend: {
@@ -67,6 +66,9 @@ const config = {
           200: '#BCF0EE',
           100: '#EBFAFA',
         },
+      },
+      backgroundImage: {
+        'hero-bg': 'url(/hero-bg.jpg)',
       },
       borderRadius: {
         lg: 'var(--radius)',

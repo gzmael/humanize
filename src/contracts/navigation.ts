@@ -1,10 +1,8 @@
 export interface NavItem {
   title: string
   href?: string
-  disabled?: boolean
   external?: boolean
-  label?: string
-  description?: string
+  onlyMobile?: boolean
 }
 
 export interface NavItemWithChildren extends NavItem {
@@ -21,7 +19,10 @@ export interface FooterItem {
     title: string
     href: string
     external?: boolean
+    icon?: 'instagram' | 'facebook' | 'whatsapp'
   }[]
 }
 
-export type MainNavItem = NavItemWithOptionalChildren
+export type MainNavItem = Omit<NavItem, 'href'> & {
+  href: string
+}
