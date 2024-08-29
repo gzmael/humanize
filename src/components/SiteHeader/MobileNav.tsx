@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
+import { usePathname, useRouter } from 'next/navigation'
 
 import { Icons } from '@/components/icons'
 import { Button } from '@/components/ui/button'
@@ -24,6 +25,7 @@ import {
   NavigationMenuList,
   navigationMenuTriggerStyle,
 } from '../ui/navigation-menu'
+import { ScrollArea } from '../ui/scroll-area'
 
 interface MobileNavProps {
   mainNavItems?: MainNavItem[]
@@ -32,6 +34,8 @@ interface MobileNavProps {
 export function MobileNav({ mainNavItems }: MobileNavProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const pathname = usePathname()
+  const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -53,7 +57,7 @@ export function MobileNav({ mainNavItems }: MobileNavProps) {
 
   return (
     <div
-      className="flex items-center justify-between lg:hidden w-full h-16 transition-colors ease-in-out duration-300"
+      className="flex items-center justify-between lg:hidden w-full h-16 transition-colors ease-linear duration-500"
       style={{
         backgroundColor: isScrolled
           ? 'hsl(var(--humanize-900))'
@@ -82,7 +86,7 @@ export function MobileNav({ mainNavItems }: MobileNavProps) {
                 className="flex items-center"
                 onClick={() => setIsOpen(false)}
               >
-                <Icons.logoDark
+                <Icons.logoDark2
                   className="mr-2 h-14 w-full"
                   aria-hidden="true"
                 />
@@ -90,51 +94,53 @@ export function MobileNav({ mainNavItems }: MobileNavProps) {
               </Link>
             </div>
           </SheetHeader>
-          <NavigationMenu
-            orientation="vertical"
-            className="max-w-full flex-col mb-auto flex-auto justify-start mt-8"
-          >
-            <NavigationMenuList className="flex-col w-full">
-              {mainNavItems?.map((item) => (
-                <NavigationMenuItem key={item.title}>
-                  <Link href={item.href} legacyBehavior passHref>
-                    <NavigationMenuLink
-                      className={cn(
-                        navigationMenuTriggerStyle(),
-                        'bg-transparent size-auto text-2xl font-display font-regular tracking-wide',
-                      )}
-                    >
-                      {item.title}
-                    </NavigationMenuLink>
-                  </Link>
-                </NavigationMenuItem>
-              ))}
-            </NavigationMenuList>
-            <div className="space-y-4 mt-16">
-              <h1 className="text-center text-2xl font-display font-semibold text-humanize-400 tracking-wide">
-                Siga-nos
-              </h1>
-              <NavigationMenuList className="space-x-2 items-center justify-centerw-full">
-                {socialLinks?.map((item) => {
-                  const Icon = Icons[item.icon as keyof typeof Icons]
-                  return (
-                    <NavigationMenuItem key={item.title}>
-                      <Link
-                        href={item.href}
-                        legacyBehavior
-                        passHref
-                        prefetch={false}
+          <ScrollArea className="w-full min-h-[60vh]">
+            <NavigationMenu
+              orientation="vertical"
+              className="max-w-full flex-col mb-auto flex-auto justify-start mt-8"
+            >
+              <NavigationMenuList className="flex-col w-full">
+                {mainNavItems?.map((item) => (
+                  <NavigationMenuItem key={item.title}>
+                    <Link href={item.href} legacyBehavior passHref>
+                      <NavigationMenuLink
+                        className={cn(
+                          navigationMenuTriggerStyle(),
+                          'bg-transparent size-auto text-2xl font-display font-regular tracking-wide',
+                        )}
                       >
-                        <NavigationMenuLink className={cn('h-auto')}>
-                          <Icon className="size-6 text-humanize-100" />
-                        </NavigationMenuLink>
-                      </Link>
-                    </NavigationMenuItem>
-                  )
-                })}
+                        {item.title}
+                      </NavigationMenuLink>
+                    </Link>
+                  </NavigationMenuItem>
+                ))}
               </NavigationMenuList>
-            </div>
-          </NavigationMenu>
+              <div className="space-y-4 mt-16">
+                <h1 className="text-center text-2xl font-display font-semibold text-humanize-400 tracking-wide">
+                  Siga-nos
+                </h1>
+                <NavigationMenuList className="space-x-2 items-center justify-centerw-full">
+                  {socialLinks?.map((item) => {
+                    const Icon = Icons[item.icon as keyof typeof Icons]
+                    return (
+                      <NavigationMenuItem key={item.title}>
+                        <Link
+                          href={item.href}
+                          legacyBehavior
+                          passHref
+                          prefetch={false}
+                        >
+                          <NavigationMenuLink className={cn('h-auto')}>
+                            <Icon className="size-6 text-humanize-100" />
+                          </NavigationMenuLink>
+                        </Link>
+                      </NavigationMenuItem>
+                    )
+                  })}
+                </NavigationMenuList>
+              </div>
+            </NavigationMenu>
+          </ScrollArea>
           <Image
             src="/H.svg"
             alt="Footer"
@@ -144,7 +150,20 @@ export function MobileNav({ mainNavItems }: MobileNavProps) {
         </SheetContent>
       </Sheet>
 
-      <Icons.logoDark2 className="mx-auto h-10 w-auto" />
+      <button
+        aria-label="Home"
+        className="flex items-center mx-auto"
+        onClick={() => {
+          if (pathname !== '/') {
+            router.push('/')
+          } else {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+          }
+        }}
+      >
+        <Icons.logoDark2 className="h-10 w-auto" aria-hidden="true" />
+        <span className="sr-only font-bold">{siteConfig.name}</span>
+      </button>
     </div>
   )
 }

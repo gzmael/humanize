@@ -47,7 +47,7 @@ export function MainNav({ items }: MainNavProps) {
   return (
     <div
       className={cn(
-        'hidden lg:flex justify-between w-full container h-16 transition-colors ease-in-out duration-300',
+        'hidden lg:flex lg:px-3 xl:px-0 justify-between w-full container h-16 transition-colors ease-linear duration-500',
       )}
       style={{
         backgroundColor: isScrolled
