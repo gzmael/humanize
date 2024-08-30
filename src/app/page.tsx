@@ -1,4 +1,10 @@
+import { AboutSession } from './_sessions/About'
+import { ContactSession } from './_sessions/Contact'
 import { Hero } from './_sessions/Hero'
+import { PartnersSession } from './_sessions/Partners'
+import { ProfessionalsSession } from './_sessions/Professionals'
+import { SpecialitiesSession } from './_sessions/Specialities'
+import { StructureSession } from './_sessions/Structure'
 import { getMetadata } from '../config/seo'
 
 export const metadata = getMetadata({
@@ -11,11 +17,12 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <section id="about">SOBRE</section>
-      <section id="partners">PARCEIROS</section>
-      <section id="specialties">ESPECIALIDADES</section>
-      <section id="professionals">PROFISSIONAIS</section>
-      <section id="contact">CONTATO</section>
+      <PartnersSession />
+      <AboutSession />
+      <SpecialitiesSession />
+      <StructureSession />
+      <ProfessionalsSession />
+      <ContactSession />
     </>
   )
 }

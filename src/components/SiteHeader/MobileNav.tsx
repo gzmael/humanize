@@ -1,10 +1,10 @@
 'use client'
 
-import { useEffect, useState } from 'react'
+import { useEffect, useMemo, useState } from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { usePathname, useRouter } from 'next/navigation'
+import { useParams, usePathname, useRouter } from 'next/navigation'
 
 import { Icons } from '@/components/icons'
 import { Button } from '@/components/ui/button'
@@ -34,12 +34,13 @@ interface MobileNavProps {
 export function MobileNav({ mainNavItems }: MobileNavProps) {
   const [isOpen, setIsOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
+  const [fullUrl, setFullUrl] = useState('')
+  const params = useParams()
   const pathname = usePathname()
   const router = useRouter()
 
   useEffect(() => {
     const handleScroll = () => {
-      console.log(window.scrollY)
       if (window.scrollY > 60) {
         setIsScrolled(true)
       } else {
@@ -53,7 +54,20 @@ export function MobileNav({ mainNavItems }: MobileNavProps) {
     }
   }, [])
 
+  useEffect(() => {
+    setFullUrl(`${pathname}${window.location.hash}`)
+  }, [params, pathname])
+
   const socialLinks = siteConfig.socialLinks
+
+  const navWithActive = useMemo(() => {
+    return mainNavItems?.map((item) => {
+      return {
+        ...item,
+        active: item.href === fullUrl,
+      }
+    })
+  }, [fullUrl, mainNavItems])
 
   return (
     <div
@@ -79,10 +93,10 @@ export function MobileNav({ mainNavItems }: MobileNavProps) {
           className="bg-humanize-950 overflow-hidden border-0 flex flex-col"
         >
           <SheetHeader>
-            <div className="px-7">
+            <div className="px-7 z-10">
               <Link
                 aria-label="Home"
-                href="/#"
+                href="/"
                 className="flex items-center"
                 onClick={() => setIsOpen(false)}
               >
@@ -97,17 +111,21 @@ export function MobileNav({ mainNavItems }: MobileNavProps) {
           <ScrollArea className="w-full min-h-[60vh]">
             <NavigationMenu
               orientation="vertical"
-              className="max-w-full flex-col mb-auto flex-auto justify-start mt-8"
+              className="max-w-full flex-col mb-auto flex-auto justify-start mt-8 z-10"
             >
               <NavigationMenuList className="flex-col w-full">
-                {mainNavItems?.map((item) => (
-                  <NavigationMenuItem key={item.title}>
+                {navWithActive?.map((item) => (
+                  <NavigationMenuItem
+                    key={item.title}
+                    onClick={() => setIsOpen(false)}
+                  >
                     <Link href={item.href} legacyBehavior passHref>
                       <NavigationMenuLink
                         className={cn(
                           navigationMenuTriggerStyle(),
                           'bg-transparent size-auto text-2xl font-display font-regular tracking-wide',
                         )}
+                        active={item.active}
                       >
                         {item.title}
                       </NavigationMenuLink>
@@ -115,7 +133,7 @@ export function MobileNav({ mainNavItems }: MobileNavProps) {
                   </NavigationMenuItem>
                 ))}
               </NavigationMenuList>
-              <div className="space-y-4 mt-16">
+              <div className="space-y-4 mt-16 z-10">
                 <h1 className="text-center text-2xl font-display font-semibold text-humanize-400 tracking-wide">
                   Siga-nos
                 </h1>
@@ -144,7 +162,7 @@ export function MobileNav({ mainNavItems }: MobileNavProps) {
           <Image
             src="/H.svg"
             alt="Footer"
-            className="absolute bottom-0 left-0 object-contain opacity-5 scale-x-125"
+            className="absolute bottom-0 left-0 object-contain opacity-5 scale-x-125 z-0"
             fill
           />
         </SheetContent>
