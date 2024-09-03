@@ -1,9 +1,22 @@
+'use client'
+
+import { useState } from 'react'
+
 import Image from 'next/image'
 
 import { Headline } from '@/components/headline'
 import { Text } from '@/components/text'
+import { humanizeData } from '@/config/site'
 
 export const Hero = () => {
+  const [position, setPosition] = useState({ x: 0, y: 0 })
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const { offsetX, offsetY } = e.nativeEvent
+    const sizeObject = 208
+    setPosition({ x: offsetX - sizeObject / 2, y: offsetY - sizeObject / 2 })
+  }
+
   return (
     <div
       className={`min-h-screen md:h-[550px] md:min-h-[550px] flex-col justify-end items-center flex relative overflow-hidden bg-gradient-to-tl from-[#005068] to-[#1D656A]`}
@@ -49,8 +62,8 @@ export const Hero = () => {
           </filter>
         </defs>
       </svg>
-      <div className="container flex flex-col md:flex-row items-end lg:items-end gap-4 z-10 px-4 lg:gap-8">
-        <div className="py-20 flex-col justify-start items-start gap-2 flex w-full">
+      <div className="container flex flex-col md:flex-row items-end gap-4 z-10 px-4 lg:gap-6 relative">
+        <div className="flex-col justify-start items-end gap-2 flex w-full lg:w-2/3 mt-16 md:mt-0 md:mb-16 lg:mb-0">
           <Headline as="h1" size="lg" variant="white" weight="semibold">
             Cuidando com carinho e humanidade
           </Headline>
@@ -59,8 +72,34 @@ export const Hero = () => {
             moderna e equipada, exames laboratoriais precisos e uma equipe de
             profissionais altamente preparados.
           </Text>
+          <div className="hidden lg:flex justify-around items-center h-24 w-full rounded-xl rounded-b-none border border-b-0 border-humanize-500 shadow-inner bg-humanize-500/20 shadow-humanize-100/30 mt-16 overflow-hidden select-none relative">
+            <span
+              className="size-52 top-0 left-0 bg-bright bg-center bg-no-repeat absolute mix-blend-darken"
+              style={{
+                top: `${position.y}px`,
+                left: `${position.x}px`,
+              }}
+            />
+            {humanizeData.map((item) => (
+              <div
+                key={item.title}
+                className="flex flex-col justify-center items-center pointer-events-none"
+              >
+                <Headline as="h3" size="xs" variant="white" weight="semibold">
+                  {item.title}
+                </Headline>
+                <Text scale="sm" weight="regular" className="leading-snug">
+                  {item.description}
+                </Text>
+              </div>
+            ))}
+            <span
+              className="size-full absolute top-0 left-0 cursor-pointer"
+              onMouseMove={handleMouseMove}
+            />
+          </div>
         </div>
-        <div className="relative w-full">
+        <div className="relative w-full lg:w-1/2">
           <Image
             src="/H.svg"
             alt="Footer"

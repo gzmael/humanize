@@ -33,26 +33,11 @@ interface MobileNavProps {
 
 export function MobileNav({ mainNavItems }: MobileNavProps) {
   const [isOpen, setIsOpen] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
+
   const [fullUrl, setFullUrl] = useState('')
   const params = useParams()
   const pathname = usePathname()
   const router = useRouter()
-
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 60) {
-        setIsScrolled(true)
-      } else {
-        setIsScrolled(false)
-      }
-    }
-
-    window.addEventListener('scroll', handleScroll)
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    }
-  }, [])
 
   useEffect(() => {
     setFullUrl(`${pathname}${window.location.hash}`)
@@ -70,14 +55,7 @@ export function MobileNav({ mainNavItems }: MobileNavProps) {
   }, [fullUrl, mainNavItems])
 
   return (
-    <div
-      className="flex items-center justify-between lg:hidden w-full h-16 transition-colors ease-linear duration-500"
-      style={{
-        backgroundColor: isScrolled
-          ? 'hsl(var(--humanize-900))'
-          : 'transparent',
-      }}
-    >
+    <div className="flex items-center justify-between lg:hidden w-full h-16">
       <Sheet open={isOpen} onOpenChange={setIsOpen}>
         <SheetTrigger asChild>
           <Button

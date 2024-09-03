@@ -98,3 +98,22 @@ export const siteConfig = {
     },
   ],
 }
+
+export const humanizeData = [
+  {
+    title: '20',
+    description: 'Especialidades',
+  },
+  {
+    title: '15',
+    description: 'Exames Laboratoriais',
+  },
+  {
+    title: '+1000',
+    description: 'Atendimentos',
+  },
+  {
+    title: '100%',
+    description: 'Em Satisfação',
+  },
+]

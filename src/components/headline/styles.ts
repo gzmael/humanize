@@ -1,6 +1,6 @@
 import { VariantProps, cva } from 'class-variance-authority'
 
-export const headlineVariants = cva('leading-6 font-display', {
+export const headlineVariants = cva('leading-6 font-display tracking-wide', {
   variants: {
     size: {
       xs: 'text-[1rem]',
@@ -14,7 +14,7 @@ export const headlineVariants = cva('leading-6 font-display', {
       white: 'text-foreground',
       black: 'text-background',
       neutral: 'text-muted',
-      heading: 'text-primary',
+      heading: 'text-humanize-800',
       accent: 'text-accent',
     },
     weight: {
