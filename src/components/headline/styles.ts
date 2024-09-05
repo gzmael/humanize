@@ -16,6 +16,7 @@ export const headlineVariants = cva('leading-6 font-display tracking-wide', {
       neutral: 'text-muted',
       heading: 'text-humanize-800',
       accent: 'text-accent',
+      title: 'text-humanize-500 font-bold font-sans uppercase',
     },
     weight: {
       regular: 'font-normal',

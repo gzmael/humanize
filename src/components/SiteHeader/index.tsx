@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 
 import { siteConfig } from '@/config/site'
+import { cn } from '@/lib/utils'
 
 import { MainNav } from './MainNav'
 import { MobileNav } from './MobileNav'
@@ -20,6 +21,7 @@ export function SiteHeader() {
     }
 
     window.addEventListener('scroll', handleScroll)
+    setIsScrolled(window.scrollY > 60)
     return () => {
       window.removeEventListener('scroll', handleScroll)
     }
@@ -27,12 +29,10 @@ export function SiteHeader() {
 
   return (
     <header
-      className="fixed top-0 z-50 w-full transition-colors ease-linear duration-500"
-      style={{
-        backgroundColor: isScrolled
-          ? 'hsl(var(--humanize-900))'
-          : 'transparent',
-      }}
+      className={cn(
+        'fixed top-0 z-50 w-full transition-colors ease-linear duration-500 bg-transparent',
+        isScrolled && 'bg-humanize-900',
+      )}
     >
       <div className="container flex items-center justify-center mx-auto">
         <MainNav items={siteConfig.mainNav} />

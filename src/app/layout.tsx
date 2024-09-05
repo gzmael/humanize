@@ -2,6 +2,8 @@ import { Open_Sans } from 'next/font/google'
 import localFont from 'next/font/local'
 
 import './globals.css'
+import { SiteFooter } from '@/components/SiteFooter'
+import { SiteHeader } from '@/components/SiteHeader'
 import { TailwindIndicator } from '@/components/ui/tailwind-indicator'
 
 import { getViewport } from '../config/seo'
@@ -43,18 +45,37 @@ const carbona = localFont({
   preload: true,
 })
 
+interface RootLayoutProps {
+  children: React.ReactNode
+  specialities: React.ReactNode
+  structure: React.ReactNode
+  professionals: React.ReactNode
+  contact: React.ReactNode
+}
+
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode
-}>) {
+  specialities,
+  structure,
+  professionals,
+  contact,
+}: RootLayoutProps) {
   return (
     <html
       lang="pt-BR"
       className={`scroll-smooth ${openSans.variable} ${carbona.variable}`}
     >
       <body>
-        {children}
+        <div className="relative flex min-h-screen flex-col">
+          <SiteHeader />
+          {children}
+          {specialities}
+          {structure}
+          {professionals}
+          {contact}
+          <SiteFooter />
+        </div>
+
         <TailwindIndicator />
       </body>
     </html>

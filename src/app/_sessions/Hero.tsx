@@ -72,14 +72,7 @@ export const Hero = () => {
             moderna e equipada, exames laboratoriais precisos e uma equipe de
             profissionais altamente preparados.
           </Text>
-          <div className="hidden lg:flex justify-around items-center h-24 w-full rounded-xl rounded-b-none border border-b-0 border-humanize-500 shadow-inner bg-humanize-500/20 shadow-humanize-100/30 mt-16 overflow-hidden select-none relative">
-            <span
-              className="size-52 top-0 left-0 bg-bright bg-center bg-no-repeat absolute mix-blend-darken"
-              style={{
-                top: `${position.y}px`,
-                left: `${position.x}px`,
-              }}
-            />
+          <div className="hidden lg:flex justify-around items-center h-24 w-full rounded-xl rounded-b-none border border-b-0 border-humanize-500 shadow-inner bg-humanize-500/20 shadow-humanize-100/30 mt-16 overflow-hidden select-none relative z-10">
             {humanizeData.map((item) => (
               <div
                 key={item.title}
@@ -94,7 +87,14 @@ export const Hero = () => {
               </div>
             ))}
             <span
-              className="size-full absolute top-0 left-0 cursor-pointer"
+              className="size-52 top-0 left-0 bg-bright bg-center bg-no-repeat absolute mix-blend-darken z-0"
+              style={{
+                top: `${position.y}px`,
+                left: `${position.x}px`,
+              }}
+            />
+            <span
+              className="size-full absolute top-0 left-0 cursor-pointer z-20"
               onMouseMove={handleMouseMove}
             />
           </div>

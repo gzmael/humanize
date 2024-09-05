@@ -15,7 +15,7 @@ export const textVariants = cva('leading-6 font-sans font-bold ', {
     variant: {
       default: 'text-foreground',
       neutral: 'text-muted-foreground',
-      body: 'text-muted-foreground',
+      body: 'text-background',
     },
     weight: {
       regular: 'font-extralight',
