@@ -374,6 +374,12 @@ export const professionals: ProfessionalsItem[] = [
         external: true,
         icon: 'instagram',
       },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588992869798',
+        external: true,
+        icon: 'whatsapp',
+      },
     ],
   },
   {
@@ -390,6 +396,367 @@ export const professionals: ProfessionalsItem[] = [
       {
         title: 'Whatsapp',
         href: 'https://wa.me/5588992869798',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dra. Caroline Morais',
+    specialty: 'Mastologia e Cirurgia de mama',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/dra.carolinemoraismasto/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588992869798',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dra. Mayra Nicodemos',
+    specialty: 'Dermatologia e Tricologia',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/mayranicodemos.dermato/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588992869798',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dr. Bebeto Cardoso',
+    specialty: 'Psicologia',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/refugio_mental1/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588997297385',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dra. Priscilla Lucena',
+    specialty: 'Otorrinolaringologia',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/p/C6wrZdBg64A/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588981274523',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dr. Lucas Araújo',
+    specialty: 'Medicina Esportiva',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/drlucasaaraujo/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588997403642',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dra. Inajah Rangel',
+    specialty: 'Medicina Estética Avançada',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/drainajahrangel/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588992869798',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dr. Joaquim Leite',
+    specialty: 'Ultrassonografista Geral e Doppler',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/dr.joaquimleite/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588992869798',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dr. Wellington Furtado',
+    specialty: 'Oftalmologia e Cirurgião de catarata e retina',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/wellingtonbfurtado/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588992869798',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dra. Viviane Aquino',
+    specialty: 'Psicóloga Clínica',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/vivianepsicologia95/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588988822958',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dr. Waydson Basílio',
+    specialty: 'Ortopedia e Traumatologia',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/dr.waydsonbasilio/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588997286790',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dr. Diego Sampaio',
+    specialty: 'Neurocirurgião',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/drdiegosampaio/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588992869798',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dra. Angelina Morais',
+    specialty: 'Ginecologia e Saúde da mulher',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/draangelinamorais/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588992869798',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dra. Soelígia Sampaio',
+    specialty: 'Fisioterapeuta traumato-ortopédica',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/soeligia_sampaio_fisio/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588992869798',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dra. Ana Cecília',
+    specialty: 'Estomaterapia',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/dra.anacecilia.e.t/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588992869798',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dra. Bruna Matias',
+    specialty: 'Gastroenterologista e Endoscopia',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/drabrunamatias.gastro/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588992869798',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dra. Christianne Pereira',
+    specialty: 'Nutricionista',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/chrissnutri/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588981830588',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dr. Gerônimo Neto',
+    specialty: 'Psquiatra',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/geronimonetoo/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588981830588',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dr. Hugo Matias',
+    specialty: 'Cirurgião Gastrointerologista',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/dr_hugo_matias_furtado/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588981830588',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dra. Denize Milfont',
+    specialty: 'Fonoaudióloga',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/denize_fono/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588981830588',
         external: true,
         icon: 'whatsapp',
       },
