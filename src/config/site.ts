@@ -376,4 +376,23 @@ export const professionals: ProfessionalsItem[] = [
       },
     ],
   },
+  {
+    name: 'Dra. Kattyuse Santos',
+    specialty: 'Psicóloga Clínica	',
+    image: '/profissionais/placeholder-female.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/kattyuse.psicologa/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588992869798',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
 ]
