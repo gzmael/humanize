@@ -1,3 +1,5 @@
+import { Icons } from '@/components/icons'
+
 export interface NavItem {
   title: string
   href?: string
@@ -25,4 +27,16 @@ export interface FooterItem {
 
 export type MainNavItem = Omit<NavItem, 'href'> & {
   href: string
+}
+
+export type ProfessionalsItem = {
+  name: string
+  specialty: string
+  image: string
+  socialLinks: {
+    title: string
+    href: string
+    external: boolean
+    icon: keyof typeof Icons
+  }[]
 }

@@ -15,7 +15,6 @@ export const Gallery = () => {
             alt={item.alt}
             width={1024}
             height={1600}
-            objectFit="cover"
             className="rounded-lg object-cover aspect-square"
           />
         </ZoomImage>

@@ -70,16 +70,18 @@ export const AboutSession = () => {
           <Image
             src="/about-cover.jpg"
             alt="Sobre nós"
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             fill
             className="object-cover mix-blend-luminosity rounded-lg"
           />
-          <div className="absolute top-[-50px] right-[-50px] bg-white rounded-full p-1 shadow-lg">
+          <div className="absolute size-24 top-[-50px] right-[-50px] bg-white rounded-full p-1 shadow-lg select-none">
             <Image
               src="/selo.png"
               alt="Selo"
-              width={100}
-              height={100}
-              className="animate-spin animate-infinite animate-duration-[20000ms] animate-delay-0 animate-ease-linear"
+              width={96}
+              height={96}
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              className="animate-spin animate-infinite animate-duration-[20000ms] animate-delay-0 animate-ease-linear size-full"
             />
             <Icons.h className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 scale-75" />
           </div>

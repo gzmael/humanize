@@ -1,32 +1,18 @@
-'use client'
-
-import { useEffect } from 'react'
-
 import Image from 'next/image'
-import { useRouter } from 'next/navigation'
-import { useInView } from 'react-intersection-observer'
 
+import { Gallery } from '@/components/gallery'
 import { Headline } from '@/components/headline'
+import { SectionWrapper } from '@/components/section-wrapper'
 
-export const StructureSession = () => {
-  const router = useRouter()
-  const { ref, inView } = useInView({
-    threshold: 0.5,
-  })
+interface StructureSessionProps {
+  blur: string
+}
 
-  useEffect(() => {
-    if (inView) {
-      router.replace('/#estrutura', {
-        scroll: false,
-      })
-    }
-  }, [inView, router])
-
+export const StructureSession = ({ blur }: StructureSessionProps) => {
   return (
-    <section
-      id="estrutura"
-      ref={ref}
+    <SectionWrapper
       className="relative justify-start"
+      id="estrutura"
       style={{
         background: 'linear-gradient(299deg, #02384D 9.4%, #017470 129.53%)',
       }}
@@ -35,6 +21,8 @@ export const StructureSession = () => {
         src="/galery/background.jpg"
         alt="Background"
         fill
+        placeholder="blur"
+        blurDataURL={blur}
         className="opacity-50 object-cover z-0 mix-blend-soft-light grayscale"
       />
       <div className="container px-2 xl:px-0 py-10 md:py-20 flex flex-col gap-8 z-10">
@@ -46,8 +34,8 @@ export const StructureSession = () => {
             Nossas Estrutura
           </Headline>
         </header>
-        <div className="w-full grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3"></div>
+        <Gallery />
       </div>
-    </section>
+    </SectionWrapper>
   )
 }

@@ -1,10 +1,14 @@
 import { Icons } from '@/components/icons'
-import { FooterItem, MainNavItem } from '@/contracts/navigation'
+import {
+  FooterItem,
+  MainNavItem,
+  ProfessionalsItem,
+} from '@/contracts/navigation'
 
-const socialLinks = {
+export const socialLinks = {
   instagram: 'https://www.instagram.com/humanize.bs/',
-  facebook: 'https://www.instagram.com/humanize.bs/',
-  whatsapp: 'https://www.instagram.com/humanize.bs/',
+  facebook: 'https://www.facebook.com/humanize.bs/',
+  whatsapp: 'https://wa.me/5588992869798',
 }
 
 export const siteConfig = {
@@ -292,5 +296,84 @@ export const structureGalery = [
   {
     src: '/galery/foto9.jpg',
     alt: 'Sala de espera do segundo andar',
+  },
+]
+
+export const professionals: ProfessionalsItem[] = [
+  {
+    name: 'Dra. Klarice Teles',
+    specialty: 'Pediatra',
+    image: '/profissionais/draklarice.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/klaricepediatra/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588981170027',
+        external: true,
+        icon: 'whatsapp',
+      },
+      {
+        title: 'Facebook',
+        href: 'https://m.facebook.com/draklariceteles/',
+        external: true,
+        icon: 'facebook',
+      },
+    ],
+  },
+  {
+    name: 'Dr. Cláudio Lóssio',
+    specialty: 'Urologista',
+    image: '/profissionais/drlossio.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/drclaudiolossio/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588997421287',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dra. Joice Gomes',
+    specialty: 'Nutricionista',
+    image: '/profissionais/drjoice.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/joicegomesnutri_/',
+        external: true,
+        icon: 'instagram',
+      },
+      {
+        title: 'Whatsapp',
+        href: 'https://wa.me/5588992869798',
+        external: true,
+        icon: 'whatsapp',
+      },
+    ],
+  },
+  {
+    name: 'Dra. Yasmin Cruz',
+    specialty: 'Cirurgiã Vascular',
+    image: '/profissionais/drayasmin.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/drayasminnycruz/',
+        external: true,
+        icon: 'instagram',
+      },
+    ],
   },
 ]

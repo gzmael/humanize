@@ -47,19 +47,9 @@ const carbona = localFont({
 
 interface RootLayoutProps {
   children: React.ReactNode
-  specialities: React.ReactNode
-  structure: React.ReactNode
-  professionals: React.ReactNode
-  contact: React.ReactNode
 }
 
-export default function RootLayout({
-  children,
-  specialities,
-  structure,
-  professionals,
-  contact,
-}: RootLayoutProps) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <html
       lang="pt-BR"
@@ -69,13 +59,8 @@ export default function RootLayout({
         <div className="relative flex min-h-screen flex-col">
           <SiteHeader />
           {children}
-          {specialities}
-          {structure}
-          {professionals}
-          {contact}
           <SiteFooter />
         </div>
-
         <TailwindIndicator />
       </body>
     </html>

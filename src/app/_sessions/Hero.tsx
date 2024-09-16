@@ -110,6 +110,7 @@ export const Hero = () => {
             <Image
               src="/doctor-hero.png"
               alt="Footer"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-contain object-bottom"
               fill
             />

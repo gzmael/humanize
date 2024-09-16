@@ -1,7 +1,14 @@
-import { AboutSession } from './_sessions/About'
-import { Hero } from './_sessions/Hero'
-import { PartnersSession } from './_sessions/Partners'
-import { SpecialitiesSession } from './_sessions/Specialities'
+import { getBlurImageAction } from '@/actions/image-placeholder'
+
+import {
+  AboutSession,
+  CallToAction,
+  Hero,
+  PartnersSession,
+  ProfessionalsSession,
+  SpecialitiesSession,
+  StructureSession,
+} from './_sessions'
 import { getMetadata } from '../config/seo'
 
 export const metadata = getMetadata({
@@ -10,13 +17,18 @@ export const metadata = getMetadata({
     'Conheça a Humanize Clínica Médica, sua clínica de exames e especialidades médica.',
 })
 
-export default function Home() {
+export default async function Home() {
+  const blur = await getBlurImageAction({ src: '/galery/background.jpg' })
+
   return (
     <>
       <Hero />
       <PartnersSession />
       <AboutSession />
       <SpecialitiesSession />
+      <StructureSession blur={blur} />
+      <CallToAction />
+      <ProfessionalsSession />
     </>
   )
 }

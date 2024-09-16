@@ -1,0 +1,7 @@
+export { CallToAction } from './CallToAction'
+export { AboutSession } from './About'
+export { Hero } from './Hero'
+export { PartnersSession } from './Partners'
+export { SpecialitiesSession } from './Specialities'
+export { StructureSession } from './Structure'
+export { ProfessionalsSession } from './Professionals'
