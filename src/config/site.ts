@@ -355,12 +355,6 @@ export const professionals: ProfessionalsItem[] = [
         external: true,
         icon: 'instagram',
       },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588992869798',
-        external: true,
-        icon: 'whatsapp',
-      },
     ],
   },
   {
@@ -373,12 +367,6 @@ export const professionals: ProfessionalsItem[] = [
         href: 'https://www.instagram.com/drayasminnycruz/',
         external: true,
         icon: 'instagram',
-      },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588992869798',
-        external: true,
-        icon: 'whatsapp',
       },
     ],
   },
@@ -393,12 +381,6 @@ export const professionals: ProfessionalsItem[] = [
         external: true,
         icon: 'instagram',
       },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588992869798',
-        external: true,
-        icon: 'whatsapp',
-      },
     ],
   },
   {
@@ -412,12 +394,6 @@ export const professionals: ProfessionalsItem[] = [
         external: true,
         icon: 'instagram',
       },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588992869798',
-        external: true,
-        icon: 'whatsapp',
-      },
     ],
   },
   {
@@ -430,12 +406,6 @@ export const professionals: ProfessionalsItem[] = [
         href: 'https://www.instagram.com/mayranicodemos.dermato/',
         external: true,
         icon: 'instagram',
-      },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588992869798',
-        external: true,
-        icon: 'whatsapp',
       },
     ],
   },
@@ -507,12 +477,6 @@ export const professionals: ProfessionalsItem[] = [
         external: true,
         icon: 'instagram',
       },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588992869798',
-        external: true,
-        icon: 'whatsapp',
-      },
     ],
   },
   {
@@ -526,12 +490,6 @@ export const professionals: ProfessionalsItem[] = [
         external: true,
         icon: 'instagram',
       },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588992869798',
-        external: true,
-        icon: 'whatsapp',
-      },
     ],
   },
   {
@@ -544,12 +502,6 @@ export const professionals: ProfessionalsItem[] = [
         href: 'https://www.instagram.com/wellingtonbfurtado/',
         external: true,
         icon: 'instagram',
-      },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588992869798',
-        external: true,
-        icon: 'whatsapp',
       },
     ],
   },
@@ -602,12 +554,6 @@ export const professionals: ProfessionalsItem[] = [
         external: true,
         icon: 'instagram',
       },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588992869798',
-        external: true,
-        icon: 'whatsapp',
-      },
     ],
   },
   {
@@ -620,12 +566,6 @@ export const professionals: ProfessionalsItem[] = [
         href: 'https://www.instagram.com/draangelinamorais/',
         external: true,
         icon: 'instagram',
-      },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588992869798',
-        external: true,
-        icon: 'whatsapp',
       },
     ],
   },
@@ -640,12 +580,6 @@ export const professionals: ProfessionalsItem[] = [
         external: true,
         icon: 'instagram',
       },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588992869798',
-        external: true,
-        icon: 'whatsapp',
-      },
     ],
   },
   {
@@ -659,12 +593,6 @@ export const professionals: ProfessionalsItem[] = [
         external: true,
         icon: 'instagram',
       },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588992869798',
-        external: true,
-        icon: 'whatsapp',
-      },
     ],
   },
   {
@@ -677,12 +605,6 @@ export const professionals: ProfessionalsItem[] = [
         href: 'https://www.instagram.com/drabrunamatias.gastro/',
         external: true,
         icon: 'instagram',
-      },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588992869798',
-        external: true,
-        icon: 'whatsapp',
       },
     ],
   },
