@@ -373,7 +373,7 @@ export const professionals: ProfessionalsItem[] = [
   {
     name: 'Dra. Kattyuse Santos',
     specialty: 'Psicóloga Clínica	',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/drakatyusse.png',
     socialLinks: [
       {
         title: 'Instagram',
@@ -386,7 +386,7 @@ export const professionals: ProfessionalsItem[] = [
   {
     name: 'Dra. Caroline Morais',
     specialty: 'Mastologia e Cirurgia de mama',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/dracaroline.png',
     socialLinks: [
       {
         title: 'Instagram',
@@ -399,7 +399,7 @@ export const professionals: ProfessionalsItem[] = [
   {
     name: 'Dra. Mayra Nicodemos',
     specialty: 'Dermatologia e Tricologia',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/dramayra.png',
     socialLinks: [
       {
         title: 'Instagram',
@@ -412,7 +412,7 @@ export const professionals: ProfessionalsItem[] = [
   {
     name: 'Dr. Bebeto Cardoso',
     specialty: 'Psicologia',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/drbebeto.png',
     socialLinks: [
       {
         title: 'Instagram',
@@ -431,7 +431,7 @@ export const professionals: ProfessionalsItem[] = [
   {
     name: 'Dra. Priscilla Lucena',
     specialty: 'Otorrinolaringologia',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/drapriscilla.png',
     socialLinks: [
       {
         title: 'Instagram',
@@ -450,7 +450,7 @@ export const professionals: ProfessionalsItem[] = [
   {
     name: 'Dr. Lucas Araújo',
     specialty: 'Medicina Esportiva',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/drlucas.png',
     socialLinks: [
       {
         title: 'Instagram',
@@ -469,7 +469,7 @@ export const professionals: ProfessionalsItem[] = [
   {
     name: 'Dra. Inajah Rangel',
     specialty: 'Medicina Estética Avançada',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/drainajah.png',
     socialLinks: [
       {
         title: 'Instagram',
@@ -482,7 +482,7 @@ export const professionals: ProfessionalsItem[] = [
   {
     name: 'Dr. Joaquim Leite',
     specialty: 'Ultrassonografista Geral e Doppler',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/drjoaquim.png',
     socialLinks: [
       {
         title: 'Instagram',
@@ -495,7 +495,7 @@ export const professionals: ProfessionalsItem[] = [
   {
     name: 'Dr. Wellington Furtado',
     specialty: 'Oftalmologia e Cirurgião de catarata e retina',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/drwellington.png',
     socialLinks: [
       {
         title: 'Instagram',
@@ -508,7 +508,7 @@ export const professionals: ProfessionalsItem[] = [
   {
     name: 'Dra. Viviane Aquino',
     specialty: 'Psicóloga Clínica',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/draviviane.png',
     socialLinks: [
       {
         title: 'Instagram',
@@ -527,7 +527,7 @@ export const professionals: ProfessionalsItem[] = [
   {
     name: 'Dr. Waydson Basílio',
     specialty: 'Ortopedia e Traumatologia',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/drwaydson.png',
     socialLinks: [
       {
         title: 'Instagram',
@@ -546,7 +546,7 @@ export const professionals: ProfessionalsItem[] = [
   {
     name: 'Dr. Diego Sampaio',
     specialty: 'Neurocirurgião',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/drdiego.png',
     socialLinks: [
       {
         title: 'Instagram',
@@ -559,7 +559,7 @@ export const professionals: ProfessionalsItem[] = [
   {
     name: 'Dra. Angelina Morais',
     specialty: 'Ginecologia e Saúde da mulher',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/draangelina.png',
     socialLinks: [
       {
         title: 'Instagram',
@@ -585,7 +585,7 @@ export const professionals: ProfessionalsItem[] = [
   {
     name: 'Dra. Ana Cecília',
     specialty: 'Estomaterapia',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/dracecilia.png',
     socialLinks: [
       {
         title: 'Instagram',
@@ -598,7 +598,7 @@ export const professionals: ProfessionalsItem[] = [
   {
     name: 'Dra. Bruna Matias',
     specialty: 'Gastroenterologista e Endoscopia',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/drabruna.png',
     socialLinks: [
       {
         title: 'Instagram',
@@ -630,7 +630,7 @@ export const professionals: ProfessionalsItem[] = [
   {
     name: 'Dr. Gerônimo Neto',
     specialty: 'Psquiatra',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/drgeronimo.png',
     socialLinks: [
       {
         title: 'Instagram',
@@ -649,7 +649,7 @@ export const professionals: ProfessionalsItem[] = [
   {
     name: 'Dr. Hugo Matias',
     specialty: 'Cirurgião Gastrointerologista',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/drhugomatias.png',
     socialLinks: [
       {
         title: 'Instagram',
