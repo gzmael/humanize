@@ -8,6 +8,7 @@ import {
   ProfessionalsSession,
   SpecialitiesSession,
   StructureSession,
+  FAQSession,
 } from './_sessions'
 import { getMetadata } from '../config/seo'
 
@@ -29,6 +30,7 @@ export default async function Home() {
       <StructureSession blur={blur} />
       <CallToAction />
       <ProfessionalsSession />
+      <FAQSession />
     </>
   )
 }

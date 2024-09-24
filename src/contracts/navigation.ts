@@ -30,6 +30,7 @@ export type MainNavItem = Omit<NavItem, 'href'> & {
 }
 
 export type ProfessionalsItem = {
+  prefix: string
   name: string
   specialty: string
   image: string

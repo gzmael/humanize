@@ -1,25 +1,32 @@
+import { useMemo } from 'react'
+
 import Image from 'next/image'
 import Link from 'next/link'
 
 import { Headline } from '@/components/headline'
 import { Icons } from '@/components/icons'
 import { SectionWrapper } from '@/components/section-wrapper'
+import { Text } from '@/components/text'
 import { professionals } from '@/config/site'
 
 export const ProfessionalsSession = () => {
+  const orderedProfessionals = useMemo(() => {
+    return professionals.sort((a, b) => a.name.localeCompare(b.name))
+  }, [])
+
   return (
     <SectionWrapper id="profissionais">
       <div className="container px-2 xl:px-0 py-10 md:py-20 flex flex-col gap-8 items-center justify-center">
         <header className="flex flex-col items-center justify-center gap-2">
           <Headline as="h2" variant="title" size="lg" weight="bold">
-            quais são
+            conheça nossa
           </Headline>
           <Headline as="h3" variant="heading" size="lg" weight="black">
-            Nossas Especialidades
+            Equipe de Profissionais
           </Headline>
         </header>
         <div className="w-full grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {professionals.map((professional) => (
+          {orderedProfessionals.map((professional) => (
             <div
               key={professional.name}
               className="flex flex-col items-center justify-center gap-4 group cursor-pointer w-full"
@@ -36,28 +43,26 @@ export const ProfessionalsSession = () => {
                   alt={`${professional.name} - ${professional.specialty}`}
                   fill
                   sizes="(max-width: 768px) 100vw"
-                  className="object-cover transition-all duration-500 group-hover:scale-110"
+                  className="object-cover transition-all duration-500 group-hover:scale-110 pointer-events-none"
                 />
               </div>
               <div className="flex flex-col items-center border border-transparent justify-center gap-1 group-hover:bg-gradient-to-br from-[#DAF5FA] to-[#acfffc] rounded-lg group-hover:shadow-lg group-hover:border-[#00c7c0] pt-20 w-full pb-4 transition-all duration-300">
                 <Headline
                   as="h4"
                   variant="heading"
-                  size="md"
+                  size="sm"
                   weight="bold"
-                  className="font-sans"
+                  className="font-sans leading-4"
                 >
-                  {professional.name}
+                  {professional.prefix} {professional.name}
                 </Headline>
-                <Headline
-                  as="h5"
-                  variant="heading"
-                  size="xs"
-                  weight="black"
-                  className="font-sans text-humanize-500 uppercase"
+                <Text
+                  scale="sm"
+                  className="text-humanize-500 uppercase"
+                  weight="bold"
                 >
                   {professional.specialty}
-                </Headline>
+                </Text>
                 {professional.socialLinks.length > 0 && (
                   <div className="flex items-center justify-center gap-2">
                     {professional.socialLinks.map((socialLink) => {

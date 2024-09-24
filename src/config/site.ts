@@ -51,6 +51,10 @@ export const siteConfig = {
       href: '/#profissionais',
     },
     {
+      title: 'FAQ',
+      href: '/#faq',
+    },
+    {
       title: 'Contato',
       href: '/#contato',
     },
@@ -301,7 +305,8 @@ export const structureGalery = [
 
 export const professionals: ProfessionalsItem[] = [
   {
-    name: 'Dra. Klarice Teles',
+    prefix: 'Dra.',
+    name: 'Klarice Teles',
     specialty: 'Pediatra',
     image: '/profissionais/draklarice.png',
     socialLinks: [
@@ -326,7 +331,8 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dr. Cláudio Lóssio',
+    prefix: 'Dr.',
+    name: 'Cláudio Lóssio',
     specialty: 'Urologista',
     image: '/profissionais/drlossio.png',
     socialLinks: [
@@ -345,7 +351,8 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dra. Joice Gomes',
+    prefix: 'Dra.',
+    name: 'Joice Gomes',
     specialty: 'Nutricionista',
     image: '/profissionais/drjoice.png',
     socialLinks: [
@@ -358,7 +365,8 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dra. Yasmin Cruz',
+    prefix: 'Dra.',
+    name: 'Yasmin Cruz',
     specialty: 'Cirurgiã Vascular',
     image: '/profissionais/drayasmin.png',
     socialLinks: [
@@ -371,7 +379,8 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dra. Kattyuse Santos',
+    prefix: 'Dra.',
+    name: 'Kattyuse Santos',
     specialty: 'Psicóloga Clínica	',
     image: '/profissionais/drakatyusse.png',
     socialLinks: [
@@ -384,7 +393,8 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dra. Caroline Morais',
+    prefix: 'Dra.',
+    name: 'Caroline Morais',
     specialty: 'Mastologia e Cirurgia de mama',
     image: '/profissionais/dracaroline.png',
     socialLinks: [
@@ -397,7 +407,8 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dra. Mayra Nicodemos',
+    prefix: 'Dra.',
+    name: 'Mayra Nicodemos',
     specialty: 'Dermatologia e Tricologia',
     image: '/profissionais/dramayra.png',
     socialLinks: [
@@ -410,7 +421,8 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dr. Bebeto Cardoso',
+    prefix: 'Dr.',
+    name: 'Bebeto Cardoso',
     specialty: 'Psicologia',
     image: '/profissionais/drbebeto.png',
     socialLinks: [
@@ -429,7 +441,8 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dra. Priscilla Lucena',
+    prefix: 'Dra.',
+    name: 'Priscilla Lucena',
     specialty: 'Otorrinolaringologia',
     image: '/profissionais/drapriscilla.png',
     socialLinks: [
@@ -448,7 +461,8 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dr. Lucas Araújo',
+    prefix: 'Dr.',
+    name: 'Lucas Araújo',
     specialty: 'Medicina Esportiva',
     image: '/profissionais/drlucas.png',
     socialLinks: [
@@ -467,7 +481,8 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dra. Inajah Rangel',
+    prefix: 'Dra.',
+    name: 'Inajah Rangel',
     specialty: 'Medicina Estética Avançada',
     image: '/profissionais/drainajah.png',
     socialLinks: [
@@ -480,7 +495,8 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dr. Joaquim Leite',
+    prefix: 'Dr.',
+    name: 'Joaquim Leite',
     specialty: 'Ultrassonografista Geral e Doppler',
     image: '/profissionais/drjoaquim.png',
     socialLinks: [
@@ -493,8 +509,9 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dr. Wellington Furtado',
-    specialty: 'Oftalmologia e Cirurgião de catarata e retina',
+    prefix: 'Dr.',
+    name: 'Wellington Furtado',
+    specialty: 'Oftalmologia',
     image: '/profissionais/drwellington.png',
     socialLinks: [
       {
@@ -506,7 +523,8 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dra. Viviane Aquino',
+    prefix: 'Dra.',
+    name: 'Viviane Aquino',
     specialty: 'Psicóloga Clínica',
     image: '/profissionais/draviviane.png',
     socialLinks: [
@@ -525,7 +543,8 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dr. Waydson Basílio',
+    prefix: 'Dr.',
+    name: 'Waydson Basílio',
     specialty: 'Ortopedia e Traumatologia',
     image: '/profissionais/drwaydson.png',
     socialLinks: [
@@ -544,7 +563,8 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dr. Diego Sampaio',
+    prefix: 'Dr.',
+    name: 'Diego Sampaio',
     specialty: 'Neurocirurgião',
     image: '/profissionais/drdiego.png',
     socialLinks: [
@@ -557,7 +577,8 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dra. Angelina Morais',
+    prefix: 'Dra.',
+    name: 'Angelina Morais',
     specialty: 'Ginecologia e Saúde da mulher',
     image: '/profissionais/draangelina.png',
     socialLinks: [
@@ -570,9 +591,10 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dra. Soelígia Sampaio',
+    prefix: 'Dra.',
+    name: 'Soelígia Sampaio',
     specialty: 'Fisioterapeuta traumato-ortopédica',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/drasoeligia.png',
     socialLinks: [
       {
         title: 'Instagram',
@@ -583,7 +605,8 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dra. Ana Cecília',
+    prefix: 'Dra.',
+    name: 'Ana Cecília',
     specialty: 'Estomaterapia',
     image: '/profissionais/dracecilia.png',
     socialLinks: [
@@ -596,7 +619,8 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dra. Bruna Matias',
+    prefix: 'Dra.',
+    name: 'Bruna Matias',
     specialty: 'Gastroenterologista e Endoscopia',
     image: '/profissionais/drabruna.png',
     socialLinks: [
@@ -609,9 +633,10 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dra. Christianne Pereira',
+    prefix: 'Dra.',
+    name: 'Christianne Pereira',
     specialty: 'Nutricionista',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/drachristianne.png',
     socialLinks: [
       {
         title: 'Instagram',
@@ -628,7 +653,8 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    name: 'Dr. Gerônimo Neto',
+    prefix: 'Dr.',
+    name: 'Gerônimo Neto',
     specialty: 'Psquiatra',
     image: '/profissionais/drgeronimo.png',
     socialLinks: [
@@ -638,16 +664,11 @@ export const professionals: ProfessionalsItem[] = [
         external: true,
         icon: 'instagram',
       },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588981830588',
-        external: true,
-        icon: 'whatsapp',
-      },
     ],
   },
   {
-    name: 'Dr. Hugo Matias',
+    prefix: 'Dr.',
+    name: 'Hugo Matias',
     specialty: 'Cirurgião Gastrointerologista',
     image: '/profissionais/drhugomatias.png',
     socialLinks: [
@@ -657,18 +678,13 @@ export const professionals: ProfessionalsItem[] = [
         external: true,
         icon: 'instagram',
       },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588981830588',
-        external: true,
-        icon: 'whatsapp',
-      },
     ],
   },
   {
-    name: 'Dra. Denize Milfont',
+    prefix: 'Dra.',
+    name: 'Denize Milfont',
     specialty: 'Fonoaudióloga',
-    image: '/profissionais/placeholder-female.png',
+    image: '/profissionais/dradenize.png',
     socialLinks: [
       {
         title: 'Instagram',
@@ -676,12 +692,38 @@ export const professionals: ProfessionalsItem[] = [
         external: true,
         icon: 'instagram',
       },
+    ],
+  },
+  {
+    prefix: 'Dr.',
+    name: 'Pedro Alencar',
+    specialty: 'Cardiologista',
+    image: '/profissionais/drpedro.png',
+    socialLinks: [
       {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588981830588',
+        title: 'Instagram',
+        href: 'https://www.instagram.com/denize_fono/',
         external: true,
-        icon: 'whatsapp',
+        icon: 'instagram',
       },
     ],
+  },
+]
+
+export const faqs = [
+  {
+    question: 'Como agendar um exame?',
+    answer:
+      'Para agendar um exame, você pode entrar em contato com a clínica pelo telefone (11) 9999-9999 ou pelo site.',
+  },
+  {
+    question: 'Quais são os horários de funcionamento da clínica?',
+    answer:
+      'A clínica funciona de segunda a sexta-feira, das 8h às 18h, e aos sábados, das 8h às 12h.',
+  },
+  {
+    question: 'A clínica oferece atendimento de emergência?',
+    answer:
+      'A clínica oferece atendimento de emergência. Para isso, você pode entrar em contato com a clínica pelo telefone (11) 9999-9999 ou pelo site.',
   },
 ]
