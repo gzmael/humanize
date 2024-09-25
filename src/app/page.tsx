@@ -3,12 +3,13 @@ import { getBlurImageAction } from '@/actions/image-placeholder'
 import {
   AboutSession,
   CallToAction,
+  ContactSection,
+  FAQSession,
   Hero,
   PartnersSession,
   ProfessionalsSession,
   SpecialitiesSession,
   StructureSession,
-  FAQSession,
 } from './_sessions'
 import { getMetadata } from '../config/seo'
 
@@ -31,6 +32,7 @@ export default async function Home() {
       <CallToAction />
       <ProfessionalsSession />
       <FAQSession />
+      <ContactSection blur={blur} />
     </>
   )
 }
