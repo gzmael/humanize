@@ -52,9 +52,8 @@ export const AboutSession = () => {
             weight="medium"
             className="leading-snug"
           >
-            Nossa missão é fornecer assistência de alta qualidade, com uma
-            equipe que acredita na abordagem integral da saúde. Não nos
-            limitamos aos sintomas; consideramos a pessoa como um todo.
+            Mais do que oferecer múltiplas especialidades médicas e exames
+            avançados, temos um compromisso genuíno com o bem-estar humano.
           </Text>
         </aside>
         <aside

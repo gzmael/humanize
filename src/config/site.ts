@@ -118,7 +118,7 @@ export const humanizeData = [
     description: 'Exames Laboratoriais',
   },
   {
-    title: '+1000',
+    title: '+1800',
     description: 'Atendimentos',
   },
   {

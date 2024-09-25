@@ -12,7 +12,6 @@ export const ContactMap = () => {
         allowfullscreen={false}
         loading="lazy"
         style="width:100% !important"
-        width={600}
         q="Humanize Centro Médico de Brejo Santo"
       />
     </aside>
