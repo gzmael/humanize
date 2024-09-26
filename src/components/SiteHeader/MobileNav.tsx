@@ -4,7 +4,7 @@ import { useEffect, useMemo, useState } from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { useParams, usePathname, useRouter } from 'next/navigation'
+import { useParams, usePathname } from 'next/navigation'
 
 import { Icons } from '@/components/icons'
 import { Button } from '@/components/ui/button'
@@ -18,6 +18,7 @@ import { siteConfig } from '@/config/site'
 import type { MainNavItem } from '@/contracts/navigation'
 import { cn } from '@/lib/utils'
 
+import { LogoToTop } from '../LogoToTop'
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -37,7 +38,6 @@ export function MobileNav({ mainNavItems }: MobileNavProps) {
   const [fullUrl, setFullUrl] = useState('')
   const params = useParams()
   const pathname = usePathname()
-  const router = useRouter()
 
   useEffect(() => {
     setFullUrl(`${pathname}${window.location.hash}`)
@@ -72,18 +72,11 @@ export function MobileNav({ mainNavItems }: MobileNavProps) {
         >
           <SheetHeader>
             <div className="px-7 z-10">
-              <Link
-                aria-label="Home"
-                href="/"
-                className="flex items-center"
-                onClick={() => setIsOpen(false)}
-              >
-                <Icons.logoDark2
-                  className="mr-2 h-14 w-full"
-                  aria-hidden="true"
-                />
-                <span className="sr-only font-bold">{siteConfig.name}</span>
-              </Link>
+              <LogoToTop
+                variant="header"
+                className="mx-auto"
+                callback={() => setIsOpen(false)}
+              />
             </div>
           </SheetHeader>
           <ScrollArea className="w-full min-h-[60vh]">
@@ -146,20 +139,7 @@ export function MobileNav({ mainNavItems }: MobileNavProps) {
         </SheetContent>
       </Sheet>
 
-      <button
-        aria-label="Home"
-        className="flex items-center mx-auto"
-        onClick={() => {
-          if (pathname !== '/') {
-            router.push('/')
-          } else {
-            window.scrollTo({ top: 0, behavior: 'smooth' })
-          }
-        }}
-      >
-        <Icons.logoDark2 className="h-10 w-auto" aria-hidden="true" />
-        <span className="sr-only font-bold">{siteConfig.name}</span>
-      </button>
+      <LogoToTop variant="header" className="mx-auto" />
     </div>
   )
 }

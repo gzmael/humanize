@@ -3,7 +3,17 @@ import {
   SiFacebook,
   SiWhatsapp,
 } from '@icons-pack/react-simple-icons'
-import { LucideProps, Menu, X } from 'lucide-react'
+import {
+  ArrowUp,
+  CalendarClock,
+  CircleCheckBig,
+  CircleX,
+  LucideProps,
+  MapPin,
+  Menu,
+  Phone,
+  X,
+} from 'lucide-react'
 
 const svgLogoBase = () => (
   <>
@@ -38,6 +48,12 @@ export const Icons = {
   instagram: SiInstagram,
   facebook: SiFacebook,
   whatsapp: SiWhatsapp,
+  toTop: ArrowUp,
+  phone: Phone,
+  calendar: CalendarClock,
+  pin: MapPin,
+  success: CircleCheckBig,
+  error: CircleX,
   logoDefault: (props: LucideProps) => (
     <svg
       fill="none"

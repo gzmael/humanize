@@ -4,6 +4,8 @@ import localFont from 'next/font/local'
 import './globals.css'
 import { SiteFooter } from '@/components/SiteFooter'
 import { SiteHeader } from '@/components/SiteHeader'
+import { ToTop } from '@/components/ToTop'
+import { Toaster } from '@/components/ui/sonner'
 import { TailwindIndicator } from '@/components/ui/tailwind-indicator'
 
 import { getViewport } from '../config/seo'
@@ -60,8 +62,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <SiteHeader />
           {children}
           <SiteFooter />
+          <ToTop />
         </div>
         <TailwindIndicator />
+        <Toaster />
       </body>
     </html>
   )

@@ -1,12 +1,14 @@
 'use client'
 
-import { useRef, useState } from 'react'
+import { useRef, useState, useTransition } from 'react'
 
 import { zodResolver } from '@hookform/resolvers/zod'
 import ReCAPTCHA from 'react-google-recaptcha'
 import { useForm } from 'react-hook-form'
 import { PatternFormat } from 'react-number-format'
+import { toast } from 'sonner'
 
+import { sendContact } from '@/actions/contact'
 import { cn } from '@/lib/utils'
 import { contactSchema, ContactSchema } from '@/validators/contactValidator'
 
@@ -31,16 +33,40 @@ import {
 import { Textarea } from './ui/textarea'
 
 export const ContactForm = () => {
-  const [, setToken] = useState<string | null>(null)
+  const [isPending, startTransaction] = useTransition()
+  const [token, setToken] = useState<string | null>(null)
   const recaptchaRef = useRef<ReCAPTCHA>(null)
   const form = useForm<ContactSchema>({
     resolver: zodResolver(contactSchema),
   })
 
-  const { handleSubmit } = form
+  const { handleSubmit, setValue } = form
 
   const onSubmit = (data: ContactSchema) => {
-    console.log(data)
+    if (!token) {
+      toast.error('Recaptcha inválido')
+      return
+    }
+
+    startTransaction(() => {
+      sendContact({
+        ...data,
+        token,
+      }).then((response) => {
+        if (response?.error) {
+          toast.error(response.error)
+        } else {
+          toast.success('Mensagem enviada com sucesso!')
+          setValue('name', '')
+          setValue('phone', '')
+          setValue('email', '')
+          setValue('subject', '')
+          setValue('message', '')
+          setValue('whatsapp', false)
+          recaptchaRef.current?.reset()
+        }
+      })
+    })
   }
 
   return (
@@ -52,7 +78,7 @@ export const ContactForm = () => {
             name="name"
             render={({ field }) => (
               <FormItem>
-                <FormLabel>Nome</FormLabel>
+                <FormLabel>Nome Completo</FormLabel>
                 <FormControl>
                   <Input placeholder="Seu nome completo" {...field} />
                 </FormControl>
@@ -135,23 +161,24 @@ export const ContactForm = () => {
               </FormItem>
             )}
           />
-
-          <div className="flex flex-col gap-2 items-end w-full">
+          <div className="flex flex-col gap-2 items-center w-full">
             <FormField
               control={form.control}
               name="whatsapp"
               render={({ field }) => (
-                <FormItem>
+                <FormItem className="flex flex-row items-start">
                   <FormControl>
-                    <FormLabel className="flex items-center font-normal gap-2 text-background">
+                    <FormLabel
+                      className="flex items-center font-normal gap-2 text-background"
+                      htmlFor="whatsapp"
+                    >
                       <Checkbox
-                        onCheckedChange={field.onChange}
                         checked={field.value}
+                        onCheckedChange={field.onChange}
                       />
                       <span>Quero receber uma resposta por WhatsApp.</span>
                     </FormLabel>
                   </FormControl>
-                  <FormMessage />
                 </FormItem>
               )}
             />
@@ -163,8 +190,8 @@ export const ContactForm = () => {
               onChange={(token) => setToken(token)}
               theme="light"
             />
-            <Button type="submit" className="w-full">
-              Enviar
+            <Button type="submit" className="w-full" disabled={isPending}>
+              {isPending ? 'Enviando...' : 'Enviar'}
             </Button>
           </div>
         </form>

@@ -1,48 +1,72 @@
 import Link from 'next/link'
 
 import { Icons } from '@/components/icons'
+import { socialLinks } from '@/config/site'
+
+import { Headline } from '../headline'
+import { LogoToTop } from '../LogoToTop'
+import { Text } from '../text'
 
 export function SiteFooter() {
+  const currentYear = new Date().getFullYear()
+  const socialIcons = {
+    instagram: Icons.instagram,
+    whatsapp: Icons.whatsapp,
+    facebook: Icons.facebook,
+  }
+
   return (
-    <footer className="bg-[#00C7C0] w-full max-w-[430px] h-auto py-8 px-4 flex flex-col items-center gap-8">
-      <Icons.logoDark className="w-4/5 max-w-[322px] h-auto" />
-      <div className="flex flex-col items-center">
-        <Link
-          className="text-humanize-800 font-sans font-semibold text-lg text-center"
-          href="/dashboard"
-        >
-          Política de Privacidade
-        </Link>
-        <Link
-          className="text-humanize-800 font-sans font-semibold text-lg text-center"
-          href="/dashboard"
-        >
-          Termos de uso
-        </Link>
-      </div>
-      <div className="flex flex-col items-center w-full max-w-[414px] gap-2">
-        <div className="font-sans font-bold text-2xl text-humanize-800 text-center">
-          SIGA-NOS
-        </div>
-        <div className="flex flex-row justify-center items-center gap-2">
-          <Link href="https://instagram.com/seu_perfil">
-            <Icons.instagram className="size-8" />
+    <footer className="bg-humanize-500 w-full h-auto flex flex-col items-center">
+      <div className="flex flex-col items-center px-2 py-8 gap-8">
+        <LogoToTop variant="footer" className="mx-auto" />
+        <div className="flex flex-col items-center px-4">
+          <Link
+            className="text-humanize-950 font-sans font-semibold text-lg text-center"
+            href="/politica-de-privacidade"
+          >
+            Política de Privacidade
           </Link>
-          <Link href="https://whatsapp.com/seu_perfil">
-            <Icons.whatsapp className="size-8" />
-          </Link>
-          <Link href="https://facebook.com/seu_perfil">
-            <Icons.facebook className="size-8" />
+          <Link
+            className="text-humanize-950 font-sans font-semibold text-lg text-center"
+            href="/termos-de-uso"
+          >
+            Termos de uso
           </Link>
         </div>
-      </div>
-      <div className="w-full max-w-[413px] text-center font-sans font-normal text-humanize-800 text-sm/[14px]">
-        © 2024 Humanize Clínica Médica. Todos os direitos reservados.
-      </div>
-      <div className="w-full max-w-[414px] bg-[#262626] py-4">
-        <div className="text-[#31D1EE] text-center text-sm/[14px] font-normal font-sans">
-          Feito com muito amor por Baita Soluções Digitais.
+        <div className="flex flex-col items-center w-full gap-2">
+          <Headline className="font-sans font-bold text-humanize-900">
+            SIGA-NOS
+          </Headline>
+          <div className="flex flex-row justify-center items-center gap-2">
+            {Object.entries(socialLinks).map(([key, value]) => {
+              const Icon = socialIcons[key as keyof typeof socialIcons]
+              return (
+                <Link key={key} href={value} prefetch={false} target="_blank">
+                  <Icon className="size-8 text-white" />
+                </Link>
+              )
+            })}
+          </div>
         </div>
+        <Text className="text-center text-humanize-800" scale="sm" as="span">
+          &copy; {currentYear} Humanize Clínica Médica.{' '}
+          <br className="block md:hidden" /> Todos os direitos reservados.
+        </Text>
+      </div>
+      <div className="w-full bg-background py-4">
+        <Text className="text-humanize-200 text-center" scale="sm">
+          Criado com muito ❤️ por{' '}
+          <Link
+            href="https://baita.dev.br"
+            target="_blank"
+            rel="noopener noreferrer"
+            prefetch={false}
+            className="text-sky-500 font-semibold"
+          >
+            Baita Soluções Digitais
+          </Link>
+          .
+        </Text>
       </div>
     </footer>
   )

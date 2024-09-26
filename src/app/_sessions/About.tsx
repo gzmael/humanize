@@ -36,7 +36,7 @@ export const AboutSession = () => {
       <div className="container flex flex-col md:flex-row-reverse md:items-end gap-10">
         <aside
           className={cn(
-            'flex flex-col items-start justify-center gap-4 animate-once animate-duration-500 animate-delay-300 animate-ease-linear animate-fill-backwards md:w-1/2',
+            'flex flex-col items-start justify-center gap-2 animate-once animate-duration-500 animate-delay-300 animate-ease-linear animate-fill-backwards md:w-1/2',
             isVisible && 'animate-fade-up',
           )}
         >
@@ -48,17 +48,21 @@ export const AboutSession = () => {
           </Headline>
           <Text
             variant="body"
-            scale="lg"
+            scale="md"
             weight="medium"
             className="leading-snug"
           >
             Mais do que oferecer múltiplas especialidades médicas e exames
-            avançados, temos um compromisso genuíno com o bem-estar humano.
+            avançados, temos um compromisso genuíno com o bem-estar humano. Cada
+            paciente, seja criança ou adulto, é acolhido com respeito e empatia.
+            Nossa equipe dedica-se a cuidar de cada pessoa com o carinho e
+            atenção que ela merece, utilizando a estrutura mais moderna da
+            cidade para garantir um atendimento completo e humanizado.
           </Text>
         </aside>
         <aside
           className={cn(
-            'w-full md:w-1/2 h-72 relative rounded-lg animate-once animate-duration-500 animate-delay-500 animate-ease-linear animate-fill-backwards shadow-lg',
+            'w-full md:w-1/2 h-72 md:h-80 relative rounded-lg animate-once animate-duration-500 animate-delay-500 animate-ease-linear animate-fill-backwards shadow-lg',
             isVisible && 'animate-fade-up',
           )}
           style={{
