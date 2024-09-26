@@ -21,7 +21,7 @@ import { ContactSchema } from '@/validators/contactValidator'
 const isLocal = process.env.NODE_ENV === 'development'
 const baseUrl = isLocal
   ? 'http://localhost:3000'
-  : `https://${process.env.NEXT_PUBLIC_APP_URL}`
+  : process.env.NEXT_PUBLIC_APP_URL
 
 export const ContactTemplate = ({
   email,
