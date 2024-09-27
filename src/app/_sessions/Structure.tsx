@@ -1,14 +1,24 @@
 import Image from 'next/image'
 
+import { getBlurImageAction } from '@/actions/image-placeholder'
 import { Gallery } from '@/components/gallery'
 import { Headline } from '@/components/headline'
 import { SectionWrapper } from '@/components/section-wrapper'
+import { structureGalery } from '@/config/site'
 
 interface StructureSessionProps {
   blur: string
 }
 
-export const StructureSession = ({ blur }: StructureSessionProps) => {
+export const StructureSession = async ({ blur }: StructureSessionProps) => {
+  const galery = await Promise.all(
+    structureGalery.map(async (item) => ({
+      blur: await getBlurImageAction({ src: item.src }),
+      src: item.src,
+      alt: item.alt,
+    })),
+  )
+
   return (
     <SectionWrapper
       className="relative justify-start"
@@ -34,7 +44,7 @@ export const StructureSession = ({ blur }: StructureSessionProps) => {
             Nossas Estrutura
           </Headline>
         </header>
-        <Gallery />
+        <Gallery galery={galery} />
       </div>
     </SectionWrapper>
   )

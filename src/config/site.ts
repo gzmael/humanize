@@ -110,7 +110,7 @@ export const siteConfig = {
 
 export const humanizeData = [
   {
-    title: '20',
+    title: '21',
     description: 'Especialidades',
   },
   {

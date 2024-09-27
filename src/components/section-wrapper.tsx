@@ -5,6 +5,8 @@ import { ComponentProps, useEffect } from 'react'
 import { useRouter } from 'next/navigation'
 import { useInView } from 'react-intersection-observer'
 
+import { cn } from '@/lib/utils'
+
 type SectionWrapperProps = ComponentProps<'section'>
 
 export const SectionWrapper = ({
@@ -27,7 +29,15 @@ export const SectionWrapper = ({
   }, [id, inView, router])
 
   return (
-    <section id={id} ref={ref} className={className} {...props}>
+    <section
+      id={id}
+      ref={ref}
+      className={cn(
+        'w-full min-h-screen flex items-center justify-center',
+        className,
+      )}
+      {...props}
+    >
       {children}
     </section>
   )

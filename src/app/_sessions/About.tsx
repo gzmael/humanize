@@ -31,12 +31,12 @@ export const AboutSession = () => {
     <section
       id="sobre"
       ref={ref}
-      className="flex flex-col items-start justify-center px-2 py-10 md:py-0 overflow-hidden"
+      className="w-full min-h-screen flex flex-col items-start justify-center px-2 py-10 md:py-0 overflow-hidden"
     >
       <div className="container flex flex-col md:flex-row-reverse md:items-end gap-10">
         <aside
           className={cn(
-            'flex flex-col items-start justify-center gap-2 animate-once animate-duration-500 animate-delay-300 animate-ease-linear animate-fill-backwards md:w-1/2',
+            'flex flex-col items-start justify-center gap-2 animate-once animate-duration-500 animate-delay-300 animate-ease-linear animate-fill-backwards md:w-1/2 fade-in-0',
             isVisible && 'animate-fade-up',
           )}
         >
