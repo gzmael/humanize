@@ -18,34 +18,36 @@ export function SiteFooter() {
   return (
     <footer className="bg-humanize-500 w-full h-auto flex flex-col items-center">
       <div className="flex flex-col items-center px-2 py-8 gap-8">
-        <LogoToTop variant="footer" className="mx-auto" />
-        <div className="flex flex-col items-center px-4">
-          <Link
-            className="text-humanize-950 font-sans font-semibold text-lg text-center"
-            href="/politica-de-privacidade"
-          >
-            Política de Privacidade
-          </Link>
-          <Link
-            className="text-humanize-950 font-sans font-semibold text-lg text-center"
-            href="/termos-de-uso"
-          >
-            Termos de uso
-          </Link>
-        </div>
-        <div className="flex flex-col items-center w-full gap-2">
-          <Headline className="font-sans font-bold text-humanize-900">
-            SIGA-NOS
-          </Headline>
-          <div className="flex flex-row justify-center items-center gap-2">
-            {Object.entries(socialLinks).map(([key, value]) => {
-              const Icon = socialIcons[key as keyof typeof socialIcons]
-              return (
-                <Link key={key} href={value} prefetch={false} target="_blank">
-                  <Icon className="size-8 text-white" />
-                </Link>
-              )
-            })}
+        <div className="grid grid-cols-1 md:grid-cols-3 items-center gap-8">
+          <LogoToTop variant="footer" className="mx-auto" />
+          <div className="flex flex-col items-center px-4">
+            <Link
+              className="text-humanize-950 font-sans font-semibold text-lg text-center"
+              href="/politica-de-privacidade"
+            >
+              Política de Privacidade
+            </Link>
+            <Link
+              className="text-humanize-950 font-sans font-semibold text-lg text-center"
+              href="/termos-de-uso"
+            >
+              Termos de uso
+            </Link>
+          </div>
+          <div className="flex flex-col items-center w-full gap-2">
+            <Headline className="font-sans font-bold text-humanize-900">
+              SIGA-NOS
+            </Headline>
+            <div className="flex flex-row justify-center items-center gap-2">
+              {Object.entries(socialLinks).map(([key, value]) => {
+                const Icon = socialIcons[key as keyof typeof socialIcons]
+                return (
+                  <Link key={key} href={value} prefetch={false} target="_blank">
+                    <Icon className="size-8 text-white" />
+                  </Link>
+                )
+              })}
+            </div>
           </div>
         </div>
         <Text className="text-center text-humanize-800" scale="sm" as="span">
