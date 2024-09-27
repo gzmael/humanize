@@ -42,7 +42,8 @@ export const sendContact = async ({
   try {
     await resend.emails.send({
       from: 'contato@humanizecentromedico.com.br',
-      to: 'jezmaelbasilio@gmail.com',
+      to: 'humanizecentromedico.25@gmail.com',
+      cc: 'jezmaelbasilio@gmail.com',
       subject: 'Novo contato no site Humanize',
       react: ContactTemplate({
         email,
