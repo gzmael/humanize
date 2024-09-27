@@ -274,32 +274,44 @@ export const specialities: SpecialitiesItemProps[] = [
 
 export const structureGalery = [
   {
-    src: '/galery/foto1.jpg',
+    src: '/galery/foto1.webp',
     alt: 'Hall da clínica',
   },
   {
-    src: '/galery/foto3.jpg',
-    alt: 'Recepção da clínica',
-  },
-  {
-    src: '/galery/foto8.jpg',
-    alt: 'Recepção da clínica 2',
-  },
-  {
-    src: '/galery/foto4.jpg',
+    src: '/galery/foto2.webp',
     alt: 'Sala de espera',
   },
   {
-    src: '/galery/foto5.jpg',
+    src: '/galery/foto3.webp',
+    alt: 'Recepção da clínica',
+  },
+  {
+    src: '/galery/foto4.webp',
+    alt: 'Sala de espera',
+  },
+  {
+    src: '/galery/foto5.webp',
+    alt: 'Recepção da clínica 2',
+  },
+  {
+    src: '/galery/foto6.webp',
+    alt: 'Sala de espera',
+  },
+  {
+    src: '/galery/foto7.webp',
     alt: 'Escada para segundo andar',
   },
   {
-    src: '/galery/foto7.jpg',
+    src: '/galery/foto8.webp',
     alt: 'Sala de espera com TV e cantina',
   },
   {
-    src: '/galery/foto9.jpg',
+    src: '/galery/foto9.webp',
     alt: 'Sala de espera do segundo andar',
+  },
+  {
+    src: '/galery/foto10.webp',
+    alt: 'Sala de espera',
   },
 ]
 
