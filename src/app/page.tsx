@@ -17,6 +17,13 @@ export const metadata = getMetadata({
   title: 'Humanize Clínica Médica',
   description:
     'Conheça a Humanize Clínica Médica, sua clínica de exames e especialidades médica.',
+  images: [
+    {
+      url: '/og-image.webp',
+      width: 1200,
+      height: 630,
+    },
+  ],
 })
 
 export const viewport = getViewport()
