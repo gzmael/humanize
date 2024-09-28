@@ -190,7 +190,12 @@ export const ContactForm = () => {
               onChange={(token) => setToken(token)}
               theme="light"
             />
-            <Button type="submit" className="w-full" disabled={isPending}>
+            <Button
+              type="submit"
+              className="w-full"
+              disabled={isPending}
+              aria-label="Enviar mensagem"
+            >
               {isPending ? 'Enviando...' : 'Enviar'}
             </Button>
           </div>

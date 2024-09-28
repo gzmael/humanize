@@ -329,12 +329,6 @@ export const professionals: ProfessionalsItem[] = [
         icon: 'instagram',
       },
       {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588981170027',
-        external: true,
-        icon: 'whatsapp',
-      },
-      {
         title: 'Facebook',
         href: 'https://m.facebook.com/draklariceteles/',
         external: true,
@@ -353,12 +347,6 @@ export const professionals: ProfessionalsItem[] = [
         href: 'https://www.instagram.com/drclaudiolossio/',
         external: true,
         icon: 'instagram',
-      },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588997421287',
-        external: true,
-        icon: 'whatsapp',
       },
     ],
   },
@@ -444,12 +432,6 @@ export const professionals: ProfessionalsItem[] = [
         external: true,
         icon: 'instagram',
       },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588997297385',
-        external: true,
-        icon: 'whatsapp',
-      },
     ],
   },
   {
@@ -464,12 +446,6 @@ export const professionals: ProfessionalsItem[] = [
         external: true,
         icon: 'instagram',
       },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588981274523',
-        external: true,
-        icon: 'whatsapp',
-      },
     ],
   },
   {
@@ -483,12 +459,6 @@ export const professionals: ProfessionalsItem[] = [
         href: 'https://www.instagram.com/drlucasaaraujo/',
         external: true,
         icon: 'instagram',
-      },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588997403642',
-        external: true,
-        icon: 'whatsapp',
       },
     ],
   },
@@ -546,12 +516,6 @@ export const professionals: ProfessionalsItem[] = [
         external: true,
         icon: 'instagram',
       },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588988822958',
-        external: true,
-        icon: 'whatsapp',
-      },
     ],
   },
   {
@@ -565,12 +529,6 @@ export const professionals: ProfessionalsItem[] = [
         href: 'https://www.instagram.com/dr.waydsonbasilio/',
         external: true,
         icon: 'instagram',
-      },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588997286790',
-        external: true,
-        icon: 'whatsapp',
       },
     ],
   },
@@ -645,26 +603,6 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    prefix: 'Dra.',
-    name: 'Christianne Pereira',
-    specialty: 'Nutricionista',
-    image: '/profissionais/drachristianne.png',
-    socialLinks: [
-      {
-        title: 'Instagram',
-        href: 'https://www.instagram.com/chrissnutri/',
-        external: true,
-        icon: 'instagram',
-      },
-      {
-        title: 'Whatsapp',
-        href: 'https://wa.me/5588981830588',
-        external: true,
-        icon: 'whatsapp',
-      },
-    ],
-  },
-  {
     prefix: 'Dr.',
     name: 'Gerônimo Neto',
     specialty: 'Psquiatra',
@@ -714,7 +652,7 @@ export const professionals: ProfessionalsItem[] = [
     socialLinks: [
       {
         title: 'Instagram',
-        href: 'https://www.instagram.com/denize_fono/',
+        href: 'https://www.instagram.com/pedroytaloa/',
         external: true,
         icon: 'instagram',
       },

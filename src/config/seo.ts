@@ -28,7 +28,7 @@ export const getMetadata = ({
   keywords = [],
 }: MetadataProps): Metadata => {
   return {
-    metadataBase: new URL(siteConfig.url),
+    metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL as string),
     title: {
       default: title,
       template: `%s - ${siteConfig.name}`,
@@ -69,5 +69,6 @@ export function getViewport(): Viewport {
     ],
     initialScale: 1,
     width: 'device-width',
+    userScalable: false,
   }
 }

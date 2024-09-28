@@ -60,6 +60,7 @@ export function MobileNav({ mainNavItems }: MobileNavProps) {
         <SheetTrigger asChild>
           <Button
             variant="ghost"
+            aria-label="Abrir menu"
             className="mr-2 px-2 text-base focus-visible:bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 lg:hidden"
           >
             <Icons.menu className="size-6 text-humanize-100" />

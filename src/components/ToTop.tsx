@@ -28,6 +28,7 @@ export function ToTop() {
   }, [lastY])
   return (
     <button
+      aria-label="Voltar ao topo"
       className={cn(
         'fixed bottom-4 right-4 bg-humanize-700 text-humanize-100 p-2 rounded-lg shadow-lg animate-once animate-duration-1000 animate-delay-0 animate-ease-linear z-20',
         isView ? 'animate-fade-down ' : 'animate-fade-up animate-reverse',

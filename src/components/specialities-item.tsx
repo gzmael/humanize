@@ -23,7 +23,7 @@ export const SpecialitiesItem = ({
         <Text
           scale="xl"
           weight="bold"
-          className="text-humanize-800 lg:text-base text-center leading-4"
+          className="text-humanize-900 lg:text-base text-center leading-4"
         >
           {title}
         </Text>

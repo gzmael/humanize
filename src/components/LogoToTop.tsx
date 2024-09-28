@@ -36,7 +36,7 @@ export function LogoToTop({
 
   return (
     <button
-      aria-label="Home"
+      aria-label="Voltar ao topo"
       className={cn('flex items-center', className)}
       onClick={() => {
         if (pathname !== '/') {
