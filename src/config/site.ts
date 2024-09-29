@@ -274,43 +274,53 @@ export const specialities: SpecialitiesItemProps[] = [
 
 export const structureGalery = [
   {
-    src: '/galery/foto1.webp',
+    src: 'https://s6.imgcdn.dev/qtABu.md.webp',
+    large: 'https://s6.imgcdn.dev/qtABu.webp',
     alt: 'Sala de Espera',
   },
   {
-    src: '/galery/foto2.webp',
+    src: 'https://s6.imgcdn.dev/qtOLL.md.webp',
+    large: 'https://s6.imgcdn.dev/qtOLL.webp',
     alt: 'Sala de Exames',
   },
   {
-    src: '/galery/foto3.webp',
+    src: 'https://s6.imgcdn.dev/qt96a.md.webp',
+    large: 'https://s6.imgcdn.dev/qt96a.webp',
     alt: 'Recepção da clínica',
   },
   {
-    src: '/galery/foto4.webp',
+    src: 'https://s6.imgcdn.dev/qt7Vn.md.webp',
+    large: 'https://s6.imgcdn.dev/qt7Vn.webp',
     alt: 'Sala de Oftalmologia',
   },
   {
-    src: '/galery/foto5.webp',
+    src: 'https://s6.imgcdn.dev/qt0UO.md.webp',
+    large: 'https://s6.imgcdn.dev/qt0UO.webp',
     alt: 'Recepção da clínica',
   },
   {
-    src: '/galery/foto6.webp',
+    src: 'https://s6.imgcdn.dev/qtBog.md.webp',
+    large: 'https://s6.imgcdn.dev/qtBog.md.webp',
     alt: 'Sala de Ortodontia',
   },
   {
-    src: '/galery/foto7.webp',
+    src: 'https://s6.imgcdn.dev/qtSsv.md.webp',
+    large: 'https://s6.imgcdn.dev/qtSsv.webp',
     alt: 'Escada para segundo andar',
   },
   {
-    src: '/galery/foto8.webp',
+    src: 'https://s6.imgcdn.dev/qtr2N.md.webp',
+    large: 'https://s6.imgcdn.dev/qtr2N.webp',
     alt: 'Sala de Cirurgia',
   },
   {
-    src: '/galery/foto9.webp',
+    src: 'https://s6.imgcdn.dev/qtvHq.md.webp',
+    large: 'https://s6.imgcdn.dev/qtvHq.webp',
     alt: 'Sala de atendimento',
   },
   {
-    src: '/galery/foto10.webp',
+    src: 'https://s6.imgcdn.dev/qt2IB.md.webp',
+    large: 'https://s6.imgcdn.dev/qt2IB.webp',
     alt: 'Sala de atendimento',
   },
 ]
