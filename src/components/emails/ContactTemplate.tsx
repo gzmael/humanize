@@ -23,7 +23,7 @@ const baseUrl = isLocal
   ? 'http://localhost:3000'
   : process.env.NEXT_PUBLIC_APP_URL
 
-export const ContactTemplate = ({
+const ContactTemplate = ({
   email,
   message,
   name,

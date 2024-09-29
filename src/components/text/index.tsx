@@ -37,4 +37,4 @@ const Text = forwardRef<HTMLParagraphElement, TextProps>(
 )
 Text.displayName = 'Text'
 
-export { Text, type TextVariantType }
+export { Text }
