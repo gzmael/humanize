@@ -108,7 +108,7 @@ export const Hero = () => {
           />
           <div className="relative w-full h-[430px]">
             <Image
-              src="/doctor-hero.png"
+              src="/doctor-hero.webp"
               alt="Footer"
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
               className="object-contain object-bottom"
