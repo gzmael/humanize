@@ -41,7 +41,7 @@ export const FAQSession = () => {
               value={faq.question}
               className="rounded-lg transition-all duration-300 shadow border-none px-2 bg-white md:data-[state=open]:-translate-x-4"
             >
-              <AccordionTrigger className="py-3 text-humanize-800 font-semibold">
+              <AccordionTrigger className="py-3 text-humanize-900 font-semibold">
                 {faq.question}
               </AccordionTrigger>
               <AccordionContent className="text-left">

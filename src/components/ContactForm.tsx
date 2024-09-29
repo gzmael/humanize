@@ -127,7 +127,7 @@ export const ContactForm = () => {
                 <FormLabel>Assunto</FormLabel>
                 <FormControl>
                   <Select onValueChange={field.onChange}>
-                    <SelectTrigger>
+                    <SelectTrigger aria-label="Assunto">
                       <SelectValue placeholder="Selecione um assunto" />
                     </SelectTrigger>
                     <SelectContent>
@@ -175,6 +175,7 @@ export const ContactForm = () => {
                       <Checkbox
                         checked={field.value}
                         onCheckedChange={field.onChange}
+                        aria-label="Quero receber uma resposta por WhatsApp."
                       />
                       <span>Quero receber uma resposta por WhatsApp.</span>
                     </FormLabel>

@@ -35,7 +35,7 @@ export function SiteFooter() {
             </Link>
           </div>
           <div className="flex flex-col items-center w-full gap-2">
-            <Headline className="font-sans font-bold text-humanize-900">
+            <Headline className="font-sans font-bold text-humanize-950">
               SIGA-NOS
             </Headline>
             <div className="flex flex-row justify-center items-center gap-2">
@@ -50,7 +50,7 @@ export function SiteFooter() {
             </div>
           </div>
         </div>
-        <Text className="text-center text-humanize-800" scale="sm" as="span">
+        <Text className="text-center text-humanize-950" scale="sm" as="span">
           &copy; {currentYear} Humanize Clínica Médica.{' '}
           <br className="block md:hidden" /> Todos os direitos reservados.
         </Text>

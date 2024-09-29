@@ -275,11 +275,11 @@ export const specialities: SpecialitiesItemProps[] = [
 export const structureGalery = [
   {
     src: '/galery/foto1.webp',
-    alt: 'Hall da clínica',
+    alt: 'Sala de Espera',
   },
   {
     src: '/galery/foto2.webp',
-    alt: 'Sala de espera',
+    alt: 'Sala de Exames',
   },
   {
     src: '/galery/foto3.webp',
@@ -287,15 +287,15 @@ export const structureGalery = [
   },
   {
     src: '/galery/foto4.webp',
-    alt: 'Sala de espera',
+    alt: 'Sala de Oftalmologia',
   },
   {
     src: '/galery/foto5.webp',
-    alt: 'Recepção da clínica 2',
+    alt: 'Recepção da clínica',
   },
   {
     src: '/galery/foto6.webp',
-    alt: 'Sala de espera',
+    alt: 'Sala de Ortodontia',
   },
   {
     src: '/galery/foto7.webp',
@@ -303,15 +303,15 @@ export const structureGalery = [
   },
   {
     src: '/galery/foto8.webp',
-    alt: 'Sala de espera com TV e cantina',
+    alt: 'Sala de Cirurgia',
   },
   {
     src: '/galery/foto9.webp',
-    alt: 'Sala de espera do segundo andar',
+    alt: 'Sala de atendimento',
   },
   {
     src: '/galery/foto10.webp',
-    alt: 'Sala de espera',
+    alt: 'Sala de atendimento',
   },
 ]
 

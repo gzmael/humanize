@@ -63,7 +63,7 @@ export const ProfessionalsSession = () => {
                   </Headline>
                   <Text
                     scale="sm"
-                    className="text-humanize-500 uppercase"
+                    className="text-muted/70 uppercase"
                     weight="bold"
                   >
                     {professional.specialty}

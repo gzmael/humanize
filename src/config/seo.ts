@@ -2,9 +2,7 @@ import { Metadata, Viewport } from 'next'
 
 import { siteConfig } from './site'
 
-type OGImage = string | OGImageDescriptor | URL
-type OGImageDescriptor = {
-  url: string | URL
+interface MetadataProps {
   secureUrl?: string | URL
   alt?: string
   type?: string
@@ -16,14 +14,12 @@ interface MetadataProps {
   title?: string
   description?: string
   url?: string
-  images?: OGImage[]
   keywords?: string[]
 }
 
 export const getMetadata = ({
   title = 'Início',
   description = siteConfig.description,
-  images,
   url = siteConfig.url,
   keywords = [],
 }: MetadataProps): Metadata => {
@@ -49,13 +45,25 @@ export const getMetadata = ({
       title,
       description,
       siteName: siteConfig.name,
-      images,
+      images: [
+        {
+          url: '/opengraph-image.png',
+          width: 1200,
+          height: 630,
+        },
+      ],
     },
     twitter: {
       card: 'summary_large_image',
       title,
       description,
-      images,
+      images: [
+        {
+          url: '/opengraph-image.png',
+          width: 1200,
+          height: 630,
+        },
+      ],
       creator: '@jez.mael',
     },
   }
@@ -69,6 +77,5 @@ export function getViewport(): Viewport {
     ],
     initialScale: 1,
     width: 'device-width',
-    userScalable: false,
   }
 }
