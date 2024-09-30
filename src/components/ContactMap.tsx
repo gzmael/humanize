@@ -1,4 +1,3 @@
-import { GoogleMapsEmbed } from '@next/third-parties/google'
 import Link from 'next/link'
 
 import { Icons } from './icons'
@@ -60,16 +59,14 @@ export const ContactMap = () => {
         })}
       </div>
       <div className="overflow-hidden rounded-lg">
-        <GoogleMapsEmbed
-          apiKey={process.env.NEXT_PUBLIC_GOOGLE_MAPS ?? ''}
-          height={420}
-          zoom="17"
-          maptype="satellite"
-          mode="place"
-          allowfullscreen={false}
+        <iframe
+          title="Humanize Centro Médico de Brejo Santo"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3955.7777924930897!2d-38.9882657249744!3d-7.489769892522372!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7a13f7f6f653619%3A0xb99967ec28ba03f2!2sHumanize%20Centro%20M%C3%A9dico%20de%20Brejo%20Santo!5e0!3m2!1spt-BR!2sbr!4v1727706895723!5m2!1spt-BR!2sbr"
+          height="420"
+          style={{ border: 0, width: '100%' }}
+          allowFullScreen
           loading="lazy"
-          style="width:100% !important"
-          q="Humanize Centro Médico de Brejo Santo"
+          referrerPolicy="no-referrer-when-downgrade"
         />
       </div>
     </aside>

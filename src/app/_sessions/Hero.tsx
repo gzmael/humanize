@@ -116,7 +116,7 @@ export const Hero = ({ doctorBlur }: HeroProps) => {
               alt="Footer"
               blurDataURL={doctorBlur}
               placeholder="blur"
-              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw"
+              sizes="(min-width: 808px) 50vw, 100vw"
               className="object-contain object-bottom"
               loading="eager"
               quality={92}
