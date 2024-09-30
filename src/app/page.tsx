@@ -1,4 +1,9 @@
-import { getBlurImageAction } from '@/actions/image-placeholder'
+import React from 'react'
+
+import {
+  getBlurImageAction,
+  getRemoteBlurImageAction,
+} from '@/actions/image-placeholder'
 
 import {
   AboutSession,
@@ -23,10 +28,13 @@ export const viewport = getViewport()
 
 export default async function Home() {
   const blur = await getBlurImageAction({ src: '/galery/background.jpg' })
+  const doctorBlur = await getRemoteBlurImageAction({
+    src: 'https://s6.imgcdn.dev/qblji.webp',
+  })
 
   return (
     <>
-      <Hero />
+      <Hero doctorBlur={doctorBlur} />
       <PartnersSession />
       <AboutSession />
       <SpecialitiesSession />

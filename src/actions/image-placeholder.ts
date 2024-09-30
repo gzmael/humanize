@@ -12,7 +12,6 @@ export async function getRemoteBlurImageAction({ src }: ImagePlaceholderProps) {
   const fimg = await fetch(src)
   const fimgb = await fimg.arrayBuffer()
   const s = sharp(fimgb)
-  // const sharpImage = sharp(path.join(process.cwd(), 'public', src))
 
   const placeholder = await s.resize(10).toBuffer()
   const base64 = placeholder.toString('base64')

@@ -8,7 +8,11 @@ import { Headline } from '@/components/headline'
 import { Text } from '@/components/text'
 import { humanizeData } from '@/config/site'
 
-export const Hero = () => {
+interface HeroProps {
+  doctorBlur: string
+}
+
+export const Hero = ({ doctorBlur }: HeroProps) => {
   const [position, setPosition] = useState({ x: 0, y: 0 })
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
@@ -108,10 +112,14 @@ export const Hero = () => {
           />
           <div className="relative w-full h-[430px]">
             <Image
-              src="/doctor-hero.webp"
+              src="https://s6.imgcdn.dev/qblji.webp"
               alt="Footer"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              blurDataURL={doctorBlur}
+              placeholder="blur"
+              sizes="(max-width: 768px) 50vw, (max-width: 1200px) 100vw"
               className="object-contain object-bottom"
+              loading="eager"
+              quality={92}
               fill
             />
           </div>
