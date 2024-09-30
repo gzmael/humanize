@@ -13,12 +13,12 @@ export const socialLinks = {
 
 export const siteConfig = {
   lang: 'pt-br',
-  name: 'Humanize Clínica Médica',
+  name: 'Humanize Centro Médico',
   shortDescription: 'Humanize',
   description:
     'A Humanize Clínica Médica, localizada em Brejo Santo, Ceará, oferece uma ampla gama de especialidades médicas e exames laboratoriais. Nossa clínica é dedicada a proporcionar cuidados de saúde de alta qualidade, com foco em exames precisos e atendimento especializado.',
-  url: 'https://humanizeclinicamedica.com.br',
-  ogImage: 'https://humanizeclinicamedica.com.br/opengraph-image.png',
+  url: 'https://humanizecentromedico.com.br',
+  ogImage: 'https://humanizecentromedico.com.br/opengraph-image.png',
   keywords: [
     'Clínica',
     'Humanize',
@@ -75,12 +75,12 @@ export const siteConfig = {
       items: [
         {
           title: 'Termos de Uso',
-          href: '/termos',
+          href: '/termos-de-uso',
           external: false,
         },
         {
-          title: 'Privacidade',
-          href: '/privacidade',
+          title: 'Política de Privacidade',
+          href: '/politica-de-privacidade',
           external: false,
         },
       ],
