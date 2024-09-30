@@ -272,56 +272,183 @@ export const specialities: SpecialitiesItemProps[] = [
   },
 ]
 
-export const structureGalery = [
+export interface StructureGaleryItem {
+  id: number
+  src: string
+  large: string
+  alt: string
+  sizes: {
+    md: {
+      width: number
+      height: number
+    }
+    lg: {
+      width: number
+      height: number
+    }
+  }
+}
+
+export const structureGalery: StructureGaleryItem[] = [
   {
+    id: 1,
     src: 'https://s6.imgcdn.dev/qtABu.md.webp',
     large: 'https://s6.imgcdn.dev/qtABu.webp',
     alt: 'Sala de Espera',
+    sizes: {
+      md: {
+        width: 500,
+        height: 662,
+      },
+      lg: {
+        width: 1024,
+        height: 1355,
+      },
+    },
   },
   {
+    id: 2,
     src: 'https://s6.imgcdn.dev/qtOLL.md.webp',
     large: 'https://s6.imgcdn.dev/qtOLL.webp',
     alt: 'Sala de Exames',
+    sizes: {
+      md: {
+        width: 500,
+        height: 662,
+      },
+      lg: {
+        width: 1024,
+        height: 1355,
+      },
+    },
   },
   {
+    id: 3,
     src: 'https://s6.imgcdn.dev/qt96a.md.webp',
     large: 'https://s6.imgcdn.dev/qt96a.webp',
     alt: 'Recepção da clínica',
+    sizes: {
+      md: {
+        width: 662,
+        height: 500,
+      },
+      lg: {
+        width: 1355,
+        height: 1024,
+      },
+    },
   },
   {
+    id: 4,
     src: 'https://s6.imgcdn.dev/qt7Vn.md.webp',
     large: 'https://s6.imgcdn.dev/qt7Vn.webp',
     alt: 'Sala de Oftalmologia',
+    sizes: {
+      md: {
+        width: 500,
+        height: 662,
+      },
+      lg: {
+        width: 1024,
+        height: 1355,
+      },
+    },
   },
   {
+    id: 5,
     src: 'https://s6.imgcdn.dev/qt0UO.md.webp',
     large: 'https://s6.imgcdn.dev/qt0UO.webp',
     alt: 'Recepção da clínica',
+    sizes: {
+      md: {
+        width: 662,
+        height: 500,
+      },
+      lg: {
+        width: 1355,
+        height: 1024,
+      },
+    },
   },
   {
+    id: 6,
     src: 'https://s6.imgcdn.dev/qtBog.md.webp',
     large: 'https://s6.imgcdn.dev/qtBog.md.webp',
     alt: 'Sala de Ortodontia',
+    sizes: {
+      md: {
+        width: 500,
+        height: 662,
+      },
+      lg: {
+        width: 1024,
+        height: 1355,
+      },
+    },
   },
   {
+    id: 7,
     src: 'https://s6.imgcdn.dev/qtSsv.md.webp',
     large: 'https://s6.imgcdn.dev/qtSsv.webp',
     alt: 'Escada para segundo andar',
+    sizes: {
+      md: {
+        width: 662,
+        height: 500,
+      },
+      lg: {
+        width: 1355,
+        height: 1024,
+      },
+    },
   },
   {
+    id: 8,
     src: 'https://s6.imgcdn.dev/qtr2N.md.webp',
     large: 'https://s6.imgcdn.dev/qtr2N.webp',
     alt: 'Sala de Cirurgia',
+    sizes: {
+      md: {
+        width: 662,
+        height: 500,
+      },
+      lg: {
+        width: 1355,
+        height: 1024,
+      },
+    },
   },
   {
+    id: 9,
     src: 'https://s6.imgcdn.dev/qtvHq.md.webp',
     large: 'https://s6.imgcdn.dev/qtvHq.webp',
     alt: 'Sala de atendimento',
+    sizes: {
+      md: {
+        width: 500,
+        height: 662,
+      },
+      lg: {
+        width: 1024,
+        height: 1355,
+      },
+    },
   },
   {
+    id: 10,
     src: 'https://s6.imgcdn.dev/qt2IB.md.webp',
     large: 'https://s6.imgcdn.dev/qt2IB.webp',
     alt: 'Sala de atendimento',
+    sizes: {
+      md: {
+        width: 500,
+        height: 662,
+      },
+      lg: {
+        width: 1024,
+        height: 1355,
+      },
+    },
   },
 ]
 
