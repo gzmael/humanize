@@ -19,7 +19,6 @@ export const StructureSession = async ({ blur }: StructureSessionProps) => {
       alt: item.alt,
     })),
   )
-  console.log(galery)
 
   return (
     <SectionWrapper

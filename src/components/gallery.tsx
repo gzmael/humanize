@@ -17,7 +17,7 @@ export const Gallery = ({ galery }: GalleryProps) => {
       {galery.map((item) => (
         <ZoomImage key={item.src} zoomImg={{ src: item.large, alt: item.alt }}>
           <Image
-            src={item.src}
+            src={item.large}
             alt={item.alt}
             width={340}
             height={340}
@@ -26,6 +26,7 @@ export const Gallery = ({ galery }: GalleryProps) => {
             blurDataURL={item.blur}
             className="rounded-lg object-cover aspect-square"
             loading="lazy"
+            quality={90}
           />
         </ZoomImage>
       ))}
