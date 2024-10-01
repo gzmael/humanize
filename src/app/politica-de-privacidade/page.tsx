@@ -11,44 +11,63 @@ export default function PoliticaDePrivacidade() {
   return (
     <section className="w-full min-h-screen flex flex-col items-start justify-center px-2 py-10 md:py-0 overflow-hidden">
       <div className="mx-auto min-h-screen break-words px-5 pb-10 pt-24  text-dark-400 md:max-w-screen-md md:px-0 ">
-        <h2 className="font-display tracking-wider font-bold text-4xl text-blue-600">
+        <h2 className="font-sans tracking-wider font-bold text-4xl text-blue-600">
           Política de Privacidade e Proteção de Dados Pessoais
         </h2>
         <div className="my-4 text-lg md:text-base">
-          <h2 className="font-display tracking-wider font-bold text-2xl text-blue-400 uppercase">
+          <h2 className="font-sans tracking-wider font-bold text-2xl text-blue-400 uppercase">
             Seção 1 - Informações Gerais
           </h2>
           <p className="font-sans tracking-wider text-base leading-6 text-dark-400 font-normal my-4">
             A presente Política de Privacidade contém informações sobre coleta,
             uso, armazenamento, tratamento e proteção dos dados pessoais dos
-            usuários e visitantes do site HUMANIZE (baitasolucoes.com.br), com a
-            finalidade de demonstrar absoluta transparência quanto ao assunto e
-            esclarecer a todos interessados sobre os tipos de dados que são
-            coletados, os motivos da coleta e a forma como os usuários podem
-            gerenciar ou excluir as suas informações pessoais. Esta Política de
-            Privacidade aplica-se a todos os usuários e visitantes do site
-            https://www.baita.dev.br e integra os Termos e Condições Gerais,
-            devidamente inscrita no CNPJ sob o nº 17.184.465/0001-42, situado em
-            Rua Iraildes Ferreira Lima, nº 16, Alto do Tenente na cidade de
-            Várzea Alegre - Ceará, nominada BAITA SOLUÇÕES DIGITAIS.
+            usuários e visitantes do site Humanize Centro Médico
+            (humanizecentromedico.com.br), com a finalidade de demonstrar
+            absoluta transparência quanto ao assunto e esclarecer a todos
+            interessados sobre os tipos de dados que são coletados, os motivos
+            da coleta e a forma como os usuários podem gerenciar ou excluir as
+            suas informações pessoais.
           </p>
           <p className="font-sans tracking-wider text-base leading-6 text-dark-400 font-normal my-4">
             Esta Política de Privacidade aplica-se a todos os usuários e
-            visitantes do site https://www.baita.dev.br e integra os Termos e
-            Condições Gerais, devidamente inscrita no CNPJ sob o nº
-            17.184.465/0001-42, situado em Rua Iraildes Ferreira Lima, nº 16,
-            Alto do Tenente na cidade de Várzea Alegre - Ceará, nominada BAITA
-            SOLUÇÕES DIGITAIS.
+            visitantes do site https://humanizecentromedico.com.br/ e integra os
+            Termos e Condições Gerais, devidamente inscrita no CNPJ sob o nº
+            49.324.014/0001-50, situado em Rua Manoel Leite de Moura, nº 557,
+            Centro na cidade de Brejo Santo - Ceará, nominada Clinica Basilio
+            Furtado.
           </p>
           <p className="font-sans tracking-wider text-base leading-6 text-dark-400 font-normal my-4">
             O presente documento foi elaborado em conformidade com a Lei Geral
-            de Proteção de Dados Pessoais (Lei 13.709/18), o Marco Civil da
-            Internet (Lei 12.965/14) (e o Regulamento da UE n. 2016/6790).
-            Ainda, o documento poderá ser atualizado em decorrência de eventual
-            atualização normativa, razão pela qual se convida o usuário a
-            consultar periodicamente esta seção.
+            de Proteção de Dados Pessoais (Lei
+            <a
+              className="text-lg text-indigo-400 hover:text-indigo-300"
+              title="LEI Nº 13.709, DE 14 DE AGOSTO DE 2018."
+              href="https://www.jusbrasil.com.br/legislacao/612902269/lei-13709-18"
+            >
+              13.709/18
+            </a>
+            ),
+            <a
+              className="text-lg text-indigo-400 hover:text-indigo-300"
+              title="LEI Nº 12.965, DE 23 ABRIL DE 2014."
+              href="https://www.jusbrasil.com.br/legislacao/117197216/lei-12965-14"
+            >
+              Marco Civil da Internet
+            </a>
+            ( Lei
+            <a
+              className="text-lg text-indigo-400 hover:text-indigo-300"
+              title="LEI Nº 12.965, DE 23 ABRIL DE 2014."
+              href="https://www.jusbrasil.com.br/legislacao/117197216/lei-12965-14"
+            >
+              12.965/14
+            </a>
+            ) (e o Regulamento da UE n. 2016/6790). Ainda, o documento poderá
+            ser atualizado em decorrência de eventual atualização normativa,
+            razão pela qual se convida o usuário a consultar periodicamente esta
+            seção.
           </p>
-          <h2 className="font-display tracking-wider font-bold text-2xl text-blue-400 uppercase">
+          <h2 className="font-sans tracking-wider font-bold text-2xl text-blue-400 uppercase">
             Seção 2 - Como Recolhemos os dados pessoais do Usuário e do
             Visitante?
           </h2>
@@ -67,14 +86,14 @@ export default function PoliticaDePrivacidade() {
           </li>
           <li>
             Quando um usuário e visitante acessa páginas do site
-            https://baita.dev.br OU a plataforma CLIENTES: as informações sobre
-            interação e acesso são coletadas pela empresa para garantir uma
-            melhor experiência ao usuário e visitante. Estes dados podem tratar
-            sobre as palavras-chaves utilizadas em uma busca, visualizações de
-            páginas, o navegador que utilizam e seus IPs de acesso, dentre
-            outras que poderão ser armazenadas e retidas.
+            https://humanizecentromedico.com.br/ OU a plataforma CLIENTES: as
+            informações sobre interação e acesso são coletadas pela empresa para
+            garantir uma melhor experiência ao usuário e visitante. Estes dados
+            podem tratar sobre as palavras-chaves utilizadas em uma busca,
+            visualizações de páginas, o navegador que utilizam e seus IPs de
+            acesso, dentre outras que poderão ser armazenadas e retidas.
           </li>
-          <h2 className="font-display tracking-wider font-bold text-2xl text-blue-400 uppercase">
+          <h2 className="font-sans tracking-wider font-bold text-2xl text-blue-400 uppercase">
             Seção 3 - Quais dados Pessoais Recolhemos sobre o Usuário e
             Visitante
           </h2>
@@ -102,7 +121,7 @@ export default function PoliticaDePrivacidade() {
               usuário solicite o descadastro.
             </li>
           </ul>
-          <h2 className="font-display tracking-wider font-bold text-2xl text-blue-400 uppercase">
+          <h2 className="font-sans tracking-wider font-bold text-2xl text-blue-400 uppercase">
             Seção 4 - Para que Finalidades Utilizamos os Dados Pessoais do
             Usuário e Visitante
           </h2>
@@ -144,7 +163,7 @@ export default function PoliticaDePrivacidade() {
             ao usuário, de modo que os direitos e obrigações aqui previstos
             permanecem aplicáveis.
           </p>
-          <h2 className="font-display tracking-wider font-bold text-2xl text-blue-400 uppercase">
+          <h2 className="font-sans tracking-wider font-bold text-2xl text-blue-400 uppercase">
             Seção 5 - Por quanto tempo os dados pessoais ficam armazenados
           </h2>
           <p>
@@ -177,7 +196,7 @@ export default function PoliticaDePrivacidade() {
             IV - uso exclusivo do controlador, vedado seu acesso por terceiro, e
             desde que anonimizados os dados.
           </p>
-          <h2 className="font-display tracking-wider font-bold text-2xl text-blue-400 uppercase">
+          <h2 className="font-sans tracking-wider font-bold text-2xl text-blue-400 uppercase">
             Seção 6 - Segurança dos Dados Pessoais Armazenados
           </h2>
           <p className="font-sans tracking-wider text-base leading-6 text-dark-400 font-normal my-4">
@@ -206,7 +225,7 @@ export default function PoliticaDePrivacidade() {
             informações pessoais caso sejamos obrigados pela lei para fazê-lo ou
             se você violar nossos Termos de Serviço.
           </p>
-          <h2 className="font-display tracking-wider font-bold text-2xl text-blue-400 uppercase">
+          <h2 className="font-sans tracking-wider font-bold text-2xl text-blue-400 uppercase">
             Seção 7 - Cookies ou Dados de Navegação
           </h2>
           <p className="font-sans tracking-wider text-base leading-6 text-dark-400 font-normal my-4">
@@ -237,7 +256,7 @@ export default function PoliticaDePrivacidade() {
           <p className="font-sans tracking-wider text-base leading-6 text-dark-400 font-normal my-4">
             A qualquer momento, o usuário poderá revogar seu consentimento
             quanto aos cookies, pelo que deverá apagar os cookies das páginas da
-            BAITA SOLUÇÕES DIGITAIS utilizando as configurações de seu navegador
+            Humanize Centro Médico utilizando as configurações de seu navegador
             de preferência. Para mais informações sobre como proceder em relação
             à gestão dos cookies nos navegadores:
           </p>
@@ -287,7 +306,7 @@ export default function PoliticaDePrivacidade() {
               </a>
             </li>
           </ul>
-          <h2 className="font-display tracking-wider font-bold text-2xl text-blue-400 uppercase">
+          <h2 className="font-sans tracking-wider font-bold text-2xl text-blue-400 uppercase">
             Seção 8 - Consentimento
           </h2>
           <p className="font-sans tracking-wider text-base leading-6 text-dark-400 font-normal my-4">
@@ -306,13 +325,13 @@ export default function PoliticaDePrivacidade() {
             tempo, para tanto deve entrar em contato através do e-mail{' '}
             <a
               className="text-lg text-indigo-400 hover:text-indigo-300"
-              href="mailto:contato@baitasolucoes.com.br"
+              href="mailto:humanizecentromedico.25@gmail.com"
             >
-              contato@baitasolucoes.com.br
+              humanizecentromedico.25@gmail.com
             </a>
             .
           </p>
-          <h2 className="font-display tracking-wider font-bold text-2xl text-blue-400 uppercase">
+          <h2 className="font-sans tracking-wider font-bold text-2xl text-blue-400 uppercase">
             Seção 9 - Alterações para essa Política de Privacidade
           </h2>
           <p className="font-sans tracking-wider text-base leading-6 text-dark-400 font-normal my-4">
@@ -332,7 +351,7 @@ export default function PoliticaDePrivacidade() {
             usuários podem ser transferidas para os novos proprietários para que
             a permanência dos serviços oferecidos.
           </p>
-          <h2 className="font-display tracking-wider font-bold text-2xl text-blue-400 uppercase">
+          <h2 className="font-sans tracking-wider font-bold text-2xl text-blue-400 uppercase">
             Seção 10 - Jurisdição para Resolução de Conflitos
           </h2>
           <p className="font-sans tracking-wider text-base leading-6 text-dark-400 font-normal my-4">
@@ -345,7 +364,7 @@ export default function PoliticaDePrivacidade() {
           </p>
           <footer>
             <p className="font-sans tracking-wider text-base leading-6 text-dark-400 font-normal my-4">
-              <em>Atualizado em 2 de Maio de 2023 Equipe Baita Soluções</em>
+              <em>Atualizado em 1 de Setembro de 2024 Equipe Baita Soluções</em>
             </p>
           </footer>
         </div>
