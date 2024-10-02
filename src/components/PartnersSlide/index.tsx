@@ -1,5 +1,6 @@
 'use client'
 import { useState } from 'react'
+import React from 'react'
 
 import Autoplay from 'embla-carousel-autoplay'
 import Image from 'next/image'
@@ -10,6 +11,7 @@ import {
   CarouselContent,
   CarouselItem,
 } from '@/components/ui/carousel'
+import { partners } from '@/config/site'
 import { useDotButton } from '@/hooks/useDotButton'
 import { cn } from '@/lib/utils'
 
@@ -33,16 +35,22 @@ export function PartnersSlide() {
         setApi={setApi}
       >
         <CarouselContent>
-          <CarouselItem className="md:basis-1/2 lg:basis-1/3">
-            <div className="w-fullp-1 rounded-lg h-32 lg:w-32">
-              <Image
-                src="/parceiros/afagu.svg"
-                alt="Logo 1"
-                width={100}
-                height={100}
-              />
-            </div>
-          </CarouselItem>
+          {partners.map((partner) => (
+            <CarouselItem
+              key={partner.name}
+              className="md:basis-1/2 lg:basis-1/3"
+            >
+              <div className="w-full p-1 rounded-lg h-32 lg:w-auto grid place-items-center">
+                <Image
+                  src={partner.image}
+                  alt={partner.name}
+                  width={partner.width}
+                  height={partner.height}
+                  className={partner.className}
+                />
+              </div>
+            </CarouselItem>
+          ))}
         </CarouselContent>
       </Carousel>
       <div className="flex items-center justify-center gap-2 ">

@@ -38,10 +38,10 @@ export const siteConfig = {
       title: 'Sobre',
       href: '/#sobre',
     },
-    {
+    /*     {
       title: 'Especialidades',
       href: '/#especialidades',
-    },
+    }, */
     {
       title: 'Estrutura',
       href: '/#estrutura',
@@ -434,7 +434,7 @@ export const structureGalery: StructureGaleryItem[] = [
       },
     },
   },
-  {
+  /*  {
     id: 10,
     src: 'https://s6.imgcdn.dev/qt2IB.md.webp',
     large: 'https://s6.imgcdn.dev/qt2IB.webp',
@@ -449,7 +449,7 @@ export const structureGalery: StructureGaleryItem[] = [
         height: 1355,
       },
     },
-  },
+  }, */
 ]
 
 export const professionals: ProfessionalsItem[] = [
@@ -801,16 +801,34 @@ export const faqs = [
   {
     question: 'Como agendar um exame?',
     answer:
-      'Para agendar um exame, você pode entrar em contato com a clínica pelo telefone (11) 9999-9999 ou pelo site.',
+      'Para agendar um exame, você pode entrar em contato com a clínica pelo telefone (88) 99286-9798 ou (88) 2138-0294.',
   },
   {
     question: 'Quais são os horários de funcionamento da clínica?',
     answer:
-      'A clínica funciona de segunda a sexta-feira, das 8h às 18h, e aos sábados, das 8h às 12h.',
+      'A clínica funciona de segunda a sexta-feira, das 07:00 às 17:00 e sábado 07:00 às 12:00',
+  },
+]
+
+interface PartnersItem {
+  name: string
+  image: string
+  width: number
+  height: number
+  className?: string
+}
+
+export const partners: PartnersItem[] = [
+  {
+    name: 'AFAGU',
+    image: '/parceiros/afagu.svg',
+    width: 100,
+    height: 100,
   },
   {
-    question: 'A clínica oferece atendimento de emergência?',
-    answer:
-      'A clínica oferece atendimento de emergência. Para isso, você pode entrar em contato com a clínica pelo telefone (11) 9999-9999 ou pelo site.',
+    name: 'Pronto Análises',
+    image: '/parceiros/pronto-analise.png',
+    width: 215,
+    height: 100,
   },
 ]

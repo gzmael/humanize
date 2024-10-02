@@ -69,7 +69,7 @@ const config = {
         },
       },
       backgroundImage: {
-        'hero-bg': 'url(/hero-bg.webp)',
+        'hero-bg': 'url(/galery/background.jpg)',
         bright:
           'radial-gradient(50% 50% at 50% 50%, rgb(70 253 246 / 23%) 0%, rgba(255, 255, 255, 0.00) 100%)',
       },

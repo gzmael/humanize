@@ -13,7 +13,7 @@ import {
   Hero,
   PartnersSession,
   ProfessionalsSession,
-  SpecialitiesSession,
+  /* SpecialitiesSession, */
   StructureSession,
 } from './_sessions'
 import { getMetadata, getViewport } from '../config/seo'
@@ -37,7 +37,7 @@ export default async function Home() {
       <Hero doctorBlur={doctorBlur} />
       <PartnersSession />
       <AboutSession />
-      <SpecialitiesSession />
+      {/* <SpecialitiesSession /> */}
       <StructureSession blur={blur} />
       <CallToAction />
       <ProfessionalsSession />

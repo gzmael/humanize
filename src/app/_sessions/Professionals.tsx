@@ -57,16 +57,16 @@ export const ProfessionalsSession = () => {
                     variant="heading"
                     size="sm"
                     weight="bold"
-                    className="font-sans leading-4"
+                    className="font-sans leading-6 text-center"
                   >
-                    {professional.prefix} {professional.name}
+                    {professional.specialty}
                   </Headline>
                   <Text
                     scale="sm"
                     className="text-muted/70 uppercase"
                     weight="bold"
                   >
-                    {professional.specialty}
+                    {professional.prefix} {professional.name}
                   </Text>
                   {professional.socialLinks.length > 0 && (
                     <div className="flex items-center justify-center gap-2">

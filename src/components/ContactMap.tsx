@@ -8,7 +8,7 @@ export const ContactMap = () => {
     {
       icon: Icons.phone,
       title: 'Telefone',
-      description: '(88) 99286-9798',
+      description: '(88) 99286-9798 ou (88) 2138-0294',
       href: 'tel:+5588992869798',
     },
     {
@@ -20,7 +20,7 @@ export const ContactMap = () => {
     {
       icon: Icons.calendar,
       title: 'Atendimento',
-      description: 'Seg à Sex: das 07hs às 18hs',
+      description: 'Seg a Sex: 07hs às 18hs. Sáb: 07hs às 12hs',
     },
     {
       icon: Icons.pin,
