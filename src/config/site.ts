@@ -602,7 +602,7 @@ export const professionals: ProfessionalsItem[] = [
   {
     prefix: 'Dra.',
     name: 'Inajah Rangel',
-    specialty: 'Medicina Estética Avançada',
+    specialty: 'Medicina Estética',
     image: '/profissionais/drainajah.png',
     socialLinks: [
       {
@@ -756,7 +756,7 @@ export const professionals: ProfessionalsItem[] = [
   {
     prefix: 'Dr.',
     name: 'Hugo Matias',
-    specialty: 'Cirurgião Gastrointerologista',
+    specialty: 'Cirurgião Digestivo',
     image: '/profissionais/drhugomatias.png',
     socialLinks: [
       {
