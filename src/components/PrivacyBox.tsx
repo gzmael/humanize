@@ -33,7 +33,7 @@ const PrivacyBox = () => {
           <Link
             href="/termos-de-uso"
             prefetch={false}
-            className="font-bold text-humanize-800"
+            className="font-bold text-humanize-900"
           >
             Termos
           </Link>{' '}
@@ -41,14 +41,14 @@ const PrivacyBox = () => {
           <Link
             href="/politica-de-privacidade"
             prefetch={false}
-            className="font-bold text-humanize-800"
+            className="font-bold text-humanize-900"
           >
             Política de Privacidade
           </Link>
           .
         </Text>
         <Button
-          color="info"
+          variant="default"
           size="sm"
           disabled={isPending}
           onClick={() => {

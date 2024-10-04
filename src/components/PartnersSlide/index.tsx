@@ -50,7 +50,7 @@ export function PartnersSlide() {
           ))}
         </CarouselContent>
       </Carousel>
-      <div className="flex items-center justify-center gap-2 ">
+      <div className="flex items-center justify-center gap-3">
         {scrollSnaps.map((_, index) => (
           <button
             type="button"
@@ -58,7 +58,7 @@ export function PartnersSlide() {
             aria-label={`Ir para página ${index + 1}`}
             onClick={() => onDotButtonClick(index)}
             className={cn(
-              'size-3 rounded-full border-2 border-humanize-500 transition-colors duration-300',
+              'size-4 md:size-3 rounded-full border-2 border-humanize-500 transition-colors duration-300',
               index === selectedIndex ? 'bg-humanize-500' : 'bg-transparent',
             )}
           >
