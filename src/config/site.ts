@@ -114,7 +114,7 @@ export const humanizeData = [
     description: 'Especialidades',
   },
   {
-    title: '15',
+    title: '888',
     description: 'Exames Laboratoriais',
   },
   {

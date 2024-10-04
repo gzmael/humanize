@@ -112,7 +112,7 @@ export const Hero = ({ doctorBlur }: HeroProps) => {
           />
           <div className="relative w-full h-[430px]">
             <Image
-              src="https://s6.imgcdn.dev/qblji.webp"
+              src="https://s6.imgcdn.dev/Fw29n.webp"
               alt="Footer"
               blurDataURL={doctorBlur}
               placeholder="blur"

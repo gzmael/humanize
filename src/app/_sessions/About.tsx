@@ -36,7 +36,7 @@ export const AboutSession = () => {
       <div className="container flex flex-col md:flex-row-reverse md:items-end gap-10">
         <aside
           className={cn(
-            'flex flex-col items-start justify-center gap-2 animate-once animate-duration-500 animate-delay-300 animate-ease-linear animate-fill-backwards md:w-1/2 fade-in-0',
+            'flex flex-col items-start justify-center gap-2 animate-once animate-duration-500 animate-delay-300 animate-ease-linear animate-fill-backwards md:pl-4 lg:pl-0 md:w-1/2 fade-in-0',
             isVisible && 'animate-fade-up',
           )}
         >

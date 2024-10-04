@@ -29,7 +29,7 @@ export const viewport = getViewport()
 export default async function Home() {
   const blur = await getBlurImageAction({ src: '/galery/background.jpg' })
   const doctorBlur = await getRemoteBlurImageAction({
-    src: 'https://s6.imgcdn.dev/qblji.webp',
+    src: 'https://s6.imgcdn.dev/Fw29n.webp',
   })
 
   return (

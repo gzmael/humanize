@@ -36,10 +36,7 @@ export function PartnersSlide() {
       >
         <CarouselContent>
           {partners.map((partner) => (
-            <CarouselItem
-              key={partner.name}
-              className="md:basis-1/2 lg:basis-1/3"
-            >
+            <CarouselItem key={partner.name} className="md:basis-1/2">
               <div className="w-full p-1 rounded-lg h-32 lg:w-auto grid place-items-center">
                 <Image
                   src={partner.image}

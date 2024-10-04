@@ -1,3 +1,5 @@
+import React from 'react'
+
 import {
   SiInstagram,
   SiFacebook,
@@ -13,6 +15,7 @@ import {
   Menu,
   Phone,
   X,
+  Loader2,
 } from 'lucide-react'
 
 const svgLogoBase = () => (
@@ -54,6 +57,7 @@ export const Icons = {
   pin: MapPin,
   success: CircleCheckBig,
   error: CircleX,
+  spinner: Loader2,
   logoDefault: (props: LucideProps) => (
     <svg
       fill="none"

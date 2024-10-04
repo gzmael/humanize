@@ -1,7 +1,9 @@
 import { Open_Sans } from 'next/font/google'
 import localFont from 'next/font/local'
+import { cookies } from 'next/headers'
 
-import './globals.css'
+import { Analytics } from '@/components/Analytics'
+import { PrivacyBox } from '@/components/PrivacyBox'
 import { SiteFooter } from '@/components/SiteFooter'
 import { SiteHeader } from '@/components/SiteHeader'
 import { ToTop } from '@/components/ToTop'
@@ -9,6 +11,8 @@ import { Toaster } from '@/components/ui/sonner'
 import { TailwindIndicator } from '@/components/ui/tailwind-indicator'
 
 import { getViewport } from '../config/seo'
+
+import './globals.css'
 
 const openSans = Open_Sans({
   subsets: ['latin'],
@@ -52,6 +56,9 @@ interface RootLayoutProps {
 }
 
 export default function RootLayout({ children }: RootLayoutProps) {
+  const cookieStore = cookies()
+  const accepted = cookieStore.get('humanize-site:privacy@v0.1')
+
   return (
     <html
       lang="pt-BR"
@@ -64,8 +71,10 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <SiteFooter />
           <ToTop />
         </div>
+        {!accepted && <PrivacyBox />}
         <TailwindIndicator />
         <Toaster />
+        <Analytics />
       </body>
     </html>
   )
