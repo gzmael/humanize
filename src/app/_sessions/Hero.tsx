@@ -23,7 +23,7 @@ export const Hero = ({ doctorBlur }: HeroProps) => {
 
   return (
     <div
-      className={`min-h-screen md:h-[550px] md:min-h-[550px] flex-col justify-end items-center flex relative overflow-hidden bg-gradient-to-tl from-[#005068] to-[#1D656A]`}
+      className={`min-h-screen md:h-[400px] md:min-h-[400px] flex-col justify-end items-center flex relative overflow-hidden bg-gradient-to-tl from-[#005068] to-[#1D656A]`}
     >
       <div className="absolute mix-blend-hard-light size-full bg-cover bg-center bg-no-repeat opacity-15 bg-hero-bg saturate-50" />
       <svg
@@ -67,11 +67,17 @@ export const Hero = ({ doctorBlur }: HeroProps) => {
         </defs>
       </svg>
       <div className="container flex flex-col md:flex-row items-end gap-4 z-10 px-4 lg:gap-6 relative">
-        <div className="flex-col justify-start items-end gap-2 flex w-full lg:w-2/3 mt-16 md:mt-0 md:mb-16 lg:mb-0">
-          <Headline as="h1" size="lg" variant="white" weight="semibold">
+        <div className="flex-col justify-start items-end gap-2 flex w-full md:w-2/5 lg:w-1/2 mt-16 md:mt-0 md:mb-16 lg:mb-0">
+          <Headline
+            as="h1"
+            size="md"
+            variant="white"
+            weight="semibold"
+            className="w-full text-left"
+          >
             Cuidando com carinho e humanidade
           </Headline>
-          <Text scale="lg" weight="regular" className="leading-snug">
+          <Text scale="md" weight="regular" className="leading-snug">
             Oferecemos uma ampla gama de especialidades médicas, uma instalação
             moderna e equipada, exames laboratoriais precisos e uma equipe de
             profissionais altamente preparados.
@@ -103,22 +109,22 @@ export const Hero = ({ doctorBlur }: HeroProps) => {
             />
           </div>
         </div>
-        <div className="relative w-full lg:w-1/2">
-          <Image
+        <div className="relative w-full md:w-3/5 lg:w-1/2">
+          {/* <Image
             src="/H.svg"
             alt="Footer"
             className="absolute h-full right-0 object-scale-down object-bottom opacity-50 translate-y-6"
             fill
-          />
-          <div className="relative w-full h-[430px]">
+          /> */}
+          <div className="relative w-full h-[300px]">
             <Image
-              src="https://s6.imgcdn.dev/Fw29n.webp"
+              src="https://s6.imgcdn.dev/FKuBK.webp"
               alt="Footer"
               blurDataURL={doctorBlur}
               placeholder="blur"
-              sizes="(min-width: 808px) 50vw, 100vw"
+              sizes="100vw"
               className="object-contain object-bottom"
-              loading="eager"
+              loading="lazy"
               quality={92}
               fill
             />

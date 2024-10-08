@@ -11,7 +11,10 @@ import { Icons } from '@/components/icons'
 import { Text } from '@/components/text'
 import { cn } from '@/lib/utils'
 
-export const AboutSession = () => {
+interface AboutSessionProps {
+  blur: string
+}
+export const AboutSession = ({ blur }: AboutSessionProps) => {
   const router = useRouter()
   const [isVisible, setIsVisible] = useState(false)
   const { ref, inView } = useInView({
@@ -31,7 +34,7 @@ export const AboutSession = () => {
     <section
       id="sobre"
       ref={ref}
-      className="w-full min-h-screen flex flex-col items-start justify-center px-2 py-10 md:py-0 overflow-hidden"
+      className="w-full min-h-screen md:min-h-[500px] flex flex-col items-start justify-center px-2 py-10 md:py-0 overflow-hidden"
     >
       <div className="container flex flex-col md:flex-row-reverse md:items-end gap-10">
         <aside
@@ -65,17 +68,15 @@ export const AboutSession = () => {
             'w-full md:w-1/2 h-72 md:h-80 relative rounded-lg animate-once animate-duration-500 animate-delay-500 animate-ease-linear animate-fill-backwards shadow-lg',
             isVisible && 'animate-fade-up',
           )}
-          style={{
-            background:
-              'linear-gradient(128deg, rgba(49, 209, 238, 0.50) 31.4%, rgba(0, 199, 192, 0.50) 101.8%), lightgray 50% / cover no-repeat',
-          }}
         >
           <Image
-            src="/about-cover.webp"
+            src="https://s6.imgcdn.dev/FKcIV.webp"
             alt="Sobre nós"
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             fill
-            className="object-cover mix-blend-luminosity rounded-lg"
+            placeholder="blur"
+            blurDataURL={blur}
+            className="object-cover rounded-lg"
           />
           <div className="absolute size-24 top-[-50px] right-[-50px] bg-white rounded-full p-1 shadow-lg select-none">
             <Image

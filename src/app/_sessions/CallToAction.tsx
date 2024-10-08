@@ -10,7 +10,7 @@ const CallToAction = () => {
       <a
         href={socialLinks.whatsapp}
         target="_blank"
-        className="flex container items-start rounded-2xl overflow-hidden relative h-[460px] sm:h-[300px] md:h-[200px] hover:brightness-105 select-none"
+        className="flex container items-start rounded-2xl overflow-hidden relative h-[340px] sm:h-[220px] md:h-[200px] hover:brightness-105 select-none"
         style={{
           background: 'linear-gradient(140deg, #123E3F 35.68%, #102222 88.88%)',
         }}
@@ -35,7 +35,7 @@ const CallToAction = () => {
               variant="white"
               size="lg"
               weight="bold"
-              className="font-sans uppercase"
+              className="font-sans uppercase sm:text-2xl md:text-3xl"
             >
               Não deixe sua saúde para depois
             </Headline>
@@ -43,13 +43,13 @@ const CallToAction = () => {
               Agende sua consulta com um de nossos profissionais hoje mesmo!
             </Text>
           </div>
-          <div className="block relative w-full h-[300px] md:h-[200px] z-20 md:w-64">
+          <div className="block relative w-full h-[180px] sm:h-[220px] md:h-[200px] z-20 md:w-[300px]">
             <Image
-              src="/doctors-calltoaction.png"
+              src="https://s6.imgcdn.dev/FK4Lo.webp"
               alt="Call to action"
-              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              sizes="(max-width: 768px) 100vw, 100vw"
               fill
-              className="object-cover scale-110 sm:scale-100 sm:object-bottom sm:object-contain"
+              className="object-contain object-bottom"
             />
           </div>
         </div>
