@@ -1,14 +1,17 @@
 import React from 'react'
 
+import dynamic from 'next/dynamic'
+
 import {
   getBlurImageAction,
   getRemoteBlurImageAction,
 } from '@/actions/image-placeholder'
+import { ContactSectionLoading } from '@/components/loadings/ContactSectionLoading'
 
 import {
   AboutSession,
   CallToAction,
-  ContactSection,
+  // ContactSection,
   FAQSession,
   Hero,
   PartnersSession,
@@ -25,6 +28,14 @@ export const metadata = getMetadata({
 })
 
 export const viewport = getViewport()
+
+const ContactSection = dynamic(
+  () => import('./_sessions/Contact').then((mod) => mod.ContactSection),
+  {
+    ssr: false,
+    loading: () => <ContactSectionLoading />,
+  },
+)
 
 export default async function Home() {
   const blur = await getBlurImageAction({ src: '/galery/background.jpg' })

@@ -23,6 +23,7 @@ export const ContactSection = ({ blur }: ContactSectionProps) => {
         alt="Background"
         fill
         placeholder="blur"
+        loading="lazy"
         blurDataURL={blur}
         className="opacity-50 object-cover z-0 mix-blend-soft-light grayscale"
       />
