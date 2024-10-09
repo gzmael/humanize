@@ -4,7 +4,7 @@ import { Headline } from '@/components/headline'
 import { Text } from '@/components/text'
 import { socialLinks } from '@/config/site'
 
-const CallToAction = () => {
+const CallToAction = ({ blur }: { blur: string }) => {
   return (
     <div className="py-16 px-2 ">
       <a
@@ -29,7 +29,7 @@ const CallToAction = () => {
           fill
         />
         <div className="flex flex-col items-stretch w-full sm:flex-row md:items-center md:justify-between">
-          <div className="w-full flex flex-col items-center justify-center gap-2 z-20 relative mt-8 md:mt-0 px-2 md:px-4 md:w-[400px]">
+          <div className="w-full flex flex-col items-center justify-center gap-2 z-20 relative mt-8 sm:mt-0 px-2 md:px-4 md:w-[400px]">
             <Headline
               as="h2"
               variant="white"
@@ -43,13 +43,16 @@ const CallToAction = () => {
               Agende sua consulta com um de nossos profissionais hoje mesmo!
             </Text>
           </div>
-          <div className="block relative w-full h-[180px] sm:h-[220px] md:h-[200px] z-20 md:w-[300px]">
+          <div className="block relative w-full h-[180px] sm:h-[220px] md:h-[200px] z-20 md:w-[450px] lg:w-[600px]">
             <Image
-              src="https://s6.imgcdn.dev/FK4Lo.webp"
+              src="/call-to-action-team.webp"
               alt="Call to action"
-              sizes="(max-width: 768px) 100vw, 100vw"
+              sizes="(max-width: 768px) 50vw, 100vw"
               fill
-              className="object-contain object-bottom"
+              blurDataURL={blur}
+              placeholder="blur"
+              className="object-cover sm:object-contain md:object-cover object-top pt-1 drop-shadow-2xl"
+              quality={96}
             />
           </div>
         </div>

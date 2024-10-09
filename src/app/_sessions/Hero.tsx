@@ -118,14 +118,14 @@ export const Hero = ({ doctorBlur }: HeroProps) => {
           /> */}
           <div className="relative w-full h-[300px]">
             <Image
-              src="https://s6.imgcdn.dev/FKuBK.webp"
+              src="/hero-team.webp"
               alt="Footer"
               blurDataURL={doctorBlur}
               placeholder="blur"
-              sizes="100vw"
-              className="object-contain object-bottom"
+              sizes="(min-width: 768px) 50vw, 100vw"
+              className="object-contain object-bottom drop-shadow-2xl"
               loading="lazy"
-              quality={92}
+              quality={98}
               fill
             />
           </div>
