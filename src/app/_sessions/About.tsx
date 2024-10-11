@@ -70,13 +70,14 @@ export const AboutSession = ({ blur }: AboutSessionProps) => {
           )}
         >
           <Image
-            src="https://s6.imgcdn.dev/FKcIV.webp"
+            src="/about-team.webp"
             alt="Sobre nós"
-            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            sizes="100vw"
             fill
             placeholder="blur"
             blurDataURL={blur}
             className="object-cover rounded-lg"
+            quality={100}
           />
           <div className="absolute size-24 top-[-50px] right-[-50px] bg-white rounded-full p-1 shadow-lg select-none">
             <Image

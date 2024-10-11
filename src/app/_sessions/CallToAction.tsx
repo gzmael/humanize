@@ -45,14 +45,14 @@ const CallToAction = ({ blur }: { blur: string }) => {
           </div>
           <div className="block relative w-full h-[180px] sm:h-[220px] md:h-[200px] z-20 md:w-[450px] lg:w-[600px]">
             <Image
-              src="/call-to-action-team.webp"
+              src="/call-to-action-team2.webp"
               alt="Call to action"
-              sizes="(max-width: 768px) 50vw, 100vw"
+              sizes="100vw"
               fill
               blurDataURL={blur}
               placeholder="blur"
               className="object-cover sm:object-contain md:object-cover object-top pt-1 drop-shadow-2xl"
-              quality={96}
+              quality={100}
             />
           </div>
         </div>

@@ -121,10 +121,10 @@ export const humanizeData = [
     title: '+1800',
     description: 'Atendimentos',
   },
-  {
+  /*   {
     title: '100%',
     description: 'Em Satisfação',
-  },
+  }, */
 ]
 
 export interface SpecialitiesItemProps {
@@ -830,5 +830,11 @@ export const partners: PartnersItem[] = [
     image: '/parceiros/pronto-analise.png',
     width: 215,
     height: 100,
+  },
+  {
+    name: 'Sinam',
+    image: '/parceiros/sinam.svg',
+    width: 272,
+    height: 150,
   },
 ]

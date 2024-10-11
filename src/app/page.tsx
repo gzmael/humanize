@@ -2,10 +2,7 @@ import React from 'react'
 
 import dynamic from 'next/dynamic'
 
-import {
-  getBlurImageAction,
-  getRemoteBlurImageAction,
-} from '@/actions/image-placeholder'
+import { getBlurImageAction } from '@/actions/image-placeholder'
 import { ContactSectionLoading } from '@/components/loadings/ContactSectionLoading'
 
 import {
@@ -40,15 +37,15 @@ const ContactSection = dynamic(
 export default async function Home() {
   const blur = await getBlurImageAction({ src: '/galery/background.jpg' })
   const doctorBlur = await getBlurImageAction({
-    src: '/hero-team.webp',
+    src: '/hero-team2.webp',
   })
 
   const callToActionBlur = await getBlurImageAction({
-    src: '/call-to-action-team.webp',
+    src: '/call-to-action-team2.webp',
   })
 
-  const aboutBlur = await getRemoteBlurImageAction({
-    src: 'https://s6.imgcdn.dev/FKcIV.webp',
+  const aboutBlur = await getBlurImageAction({
+    src: '/about-team.webp',
   })
 
   return (

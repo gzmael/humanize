@@ -66,8 +66,8 @@ export const Hero = ({ doctorBlur }: HeroProps) => {
           </filter>
         </defs>
       </svg>
-      <div className="container flex flex-col md:flex-row items-end gap-4 z-10 px-4 lg:gap-6 relative">
-        <div className="flex-col justify-start items-end gap-2 flex w-full md:w-2/5 lg:w-1/2 mt-16 md:mt-0 md:mb-16 lg:mb-0">
+      <div className="container flex flex-col md:flex-row items-end gap-4 z-10 px-4 lg:gap-6 relative lg:px-0">
+        <div className="flex-col justify-start items-end gap-2 flex w-full md:w-2/5 lg:w-[450px] mt-16 md:mt-0 md:mb-16 lg:mb-0">
           <Headline
             as="h1"
             size="md"
@@ -82,7 +82,7 @@ export const Hero = ({ doctorBlur }: HeroProps) => {
             moderna e equipada, exames laboratoriais precisos e uma equipe de
             profissionais altamente preparados.
           </Text>
-          <div className="hidden lg:flex justify-around items-center h-24 w-full rounded-xl rounded-b-none border border-b-0 border-humanize-500 shadow-inner bg-humanize-500/20 shadow-humanize-100/30 mt-16 overflow-hidden select-none relative z-10">
+          <div className="hidden lg:flex justify-around items-center h-24 w-full rounded-xl rounded-b-none border border-b-0 border-humanize-500 shadow-inner bg-humanize-500/20 shadow-humanize-100/30 mt-8 overflow-hidden select-none relative z-10">
             {humanizeData.map((item) => (
               <div
                 key={item.title}
@@ -109,7 +109,7 @@ export const Hero = ({ doctorBlur }: HeroProps) => {
             />
           </div>
         </div>
-        <div className="relative w-full md:w-3/5 lg:w-1/2">
+        <div className="relative w-full md:w-3/5 lg:w-[600px]">
           {/* <Image
             src="/H.svg"
             alt="Footer"
@@ -118,14 +118,14 @@ export const Hero = ({ doctorBlur }: HeroProps) => {
           /> */}
           <div className="relative w-full h-[300px]">
             <Image
-              src="/hero-team.webp"
+              src="/hero-team2.webp"
               alt="Footer"
               blurDataURL={doctorBlur}
               placeholder="blur"
               sizes="(min-width: 768px) 50vw, 100vw"
               className="object-contain object-bottom drop-shadow-2xl"
               loading="lazy"
-              quality={98}
+              quality={100}
               fill
             />
           </div>
