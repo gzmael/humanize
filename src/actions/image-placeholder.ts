@@ -10,6 +10,7 @@ interface ImagePlaceholderProps {
 
 export async function getRemoteBlurImageAction({ src }: ImagePlaceholderProps) {
   const fimg = await fetch(src)
+  console.log(src)
   const fimgb = await fimg.arrayBuffer()
   const s = sharp(fimgb)
 

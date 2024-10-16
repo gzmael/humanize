@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { getRemoteBlurImageAction } from '@/actions/image-placeholder'
+import { getBlurImageAction, getRemoteBlurImageAction } from '@/actions/image-placeholder'
 import { Gallery } from '@/components/gallery'
 import { Headline } from '@/components/headline'
 import { SectionWrapper } from '@/components/section-wrapper'
@@ -14,7 +14,7 @@ export const StructureSession = async ({ blur }: StructureSessionProps) => {
   const galery = await Promise.all(
     structureGalery.map(async (item) => ({
       id: item.id,
-      blur: await getRemoteBlurImageAction({ src: item.src }),
+      blur: await getBlurImageAction({ src: item.src }),
       src: item.src,
       large: item.large,
       alt: item.alt,

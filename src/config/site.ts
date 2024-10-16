@@ -292,8 +292,8 @@ export interface StructureGaleryItem {
 export const structureGalery: StructureGaleryItem[] = [
   {
     id: 1,
-    src: 'https://s6.imgcdn.dev/qtABu.md.webp',
-    large: 'https://s6.imgcdn.dev/qtABu.webp',
+    src: '/galery/foto1.webp',
+    large: '/galery/foto1.webp',
     alt: 'Sala de Espera',
     sizes: {
       md: {
@@ -308,8 +308,8 @@ export const structureGalery: StructureGaleryItem[] = [
   },
   {
     id: 2,
-    src: 'https://s6.imgcdn.dev/qtOLL.md.webp',
-    large: 'https://s6.imgcdn.dev/qtOLL.webp',
+    src: '/galery/foto2.webp',
+    large: '/galery/foto2.webp',
     alt: 'Sala de Exames',
     sizes: {
       md: {
@@ -324,8 +324,8 @@ export const structureGalery: StructureGaleryItem[] = [
   },
   {
     id: 3,
-    src: 'https://s6.imgcdn.dev/qt96a.md.webp',
-    large: 'https://s6.imgcdn.dev/qt96a.webp',
+    src: '/galery/foto3.webp',
+    large: '/galery/foto3.webp',
     alt: 'Recepção da clínica',
     sizes: {
       md: {
@@ -340,8 +340,8 @@ export const structureGalery: StructureGaleryItem[] = [
   },
   {
     id: 4,
-    src: 'https://s6.imgcdn.dev/qt7Vn.md.webp',
-    large: 'https://s6.imgcdn.dev/qt7Vn.webp',
+    src: '/galery/foto4.webp',
+    large: '/galery/foto4.webp',
     alt: 'Sala de Oftalmologia',
     sizes: {
       md: {
@@ -356,8 +356,8 @@ export const structureGalery: StructureGaleryItem[] = [
   },
   {
     id: 5,
-    src: 'https://s6.imgcdn.dev/qt0UO.md.webp',
-    large: 'https://s6.imgcdn.dev/qt0UO.webp',
+    src: '/galery/foto5.webp',
+    large: '/galery/foto5.webp',
     alt: 'Recepção da clínica',
     sizes: {
       md: {
@@ -372,8 +372,8 @@ export const structureGalery: StructureGaleryItem[] = [
   },
   {
     id: 6,
-    src: 'https://s6.imgcdn.dev/qtBog.md.webp',
-    large: 'https://s6.imgcdn.dev/qtBog.md.webp',
+    src: '/galery/foto6.webp',
+    large: '/galery/foto6.webp',
     alt: 'Sala de Ortodontia',
     sizes: {
       md: {
@@ -388,8 +388,8 @@ export const structureGalery: StructureGaleryItem[] = [
   },
   {
     id: 7,
-    src: 'https://s6.imgcdn.dev/qtSsv.md.webp',
-    large: 'https://s6.imgcdn.dev/qtSsv.webp',
+    src: '/galery/foto7.webp',
+    large: '/galery/foto7.webp',
     alt: 'Escada para segundo andar',
     sizes: {
       md: {
@@ -404,8 +404,8 @@ export const structureGalery: StructureGaleryItem[] = [
   },
   {
     id: 8,
-    src: 'https://s6.imgcdn.dev/qtr2N.md.webp',
-    large: 'https://s6.imgcdn.dev/qtr2N.webp',
+    src: '/galery/foto8.webp',
+    large: '/galery/foto8.webp',
     alt: 'Sala de Cirurgia',
     sizes: {
       md: {
@@ -420,8 +420,8 @@ export const structureGalery: StructureGaleryItem[] = [
   },
   {
     id: 9,
-    src: 'https://s6.imgcdn.dev/qtvHq.md.webp',
-    large: 'https://s6.imgcdn.dev/qtvHq.webp',
+    src: '/galery/foto9.webp',
+    large: '/galery/foto9.webp',
     alt: 'Sala de atendimento',
     sizes: {
       md: {
@@ -455,6 +455,20 @@ export const structureGalery: StructureGaleryItem[] = [
 export const professionals: ProfessionalsItem[] = [
   {
     prefix: 'Dra.',
+    name: 'Mayra Nicodemos',
+    specialty: 'Dermatologia e Tricologia',
+    image: '/profissionais/dramayra.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/mayranicodemos.dermato/',
+        external: true,
+        icon: 'instagram',
+      },
+    ],
+  },
+  {
+    prefix: 'Dra.',
     name: 'Klarice Teles',
     specialty: 'Pediatra',
     image: '/profissionais/draklarice.png',
@@ -474,14 +488,56 @@ export const professionals: ProfessionalsItem[] = [
     ],
   },
   {
-    prefix: 'Dr.',
-    name: 'Cláudio Lóssio',
-    specialty: 'Urologista',
-    image: '/profissionais/drlossio.png',
+    prefix: 'Dra.',
+    name: 'Priscilla Lucena',
+    specialty: 'Otorrinolaringologia',
+    image: '/profissionais/drapriscilla.png',
     socialLinks: [
       {
         title: 'Instagram',
-        href: 'https://www.instagram.com/drclaudiolossio/',
+        href: 'https://www.instagram.com/p/C6wrZdBg64A/',
+        external: true,
+        icon: 'instagram',
+      },
+    ],
+  },
+  {
+    prefix: 'Dra.',
+    name: 'Angelina Morais',
+    specialty: 'Ginecologia e Saúde da mulher',
+    image: '/profissionais/draangelina.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/draangelinamorais/',
+        external: true,
+        icon: 'instagram',
+      },
+    ],
+  },
+  {
+    prefix: 'Dr.',
+    name: 'Wellington Furtado',
+    specialty: 'Oftalmologia',
+    image: '/profissionais/drwellington.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/wellingtonbfurtado/',
+        external: true,
+        icon: 'instagram',
+      },
+    ],
+  },
+  {
+    prefix: 'Dr.',
+    name: 'Lucas Araújo',
+    specialty: 'Medicina Esportiva',
+    image: '/profissionais/drlucas.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/drlucasaaraujo/',
         external: true,
         icon: 'instagram',
       },
@@ -496,6 +552,34 @@ export const professionals: ProfessionalsItem[] = [
       {
         title: 'Instagram',
         href: 'https://www.instagram.com/joicegomesnutri_/',
+        external: true,
+        icon: 'instagram',
+      },
+    ],
+  },
+  {
+    prefix: 'Dr.',
+    name: 'Bebeto Cardoso',
+    specialty: 'Psicologia',
+    image: '/profissionais/drbebeto.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/refugio_mental1/',
+        external: true,
+        icon: 'instagram',
+      },
+    ],
+  },
+  {
+    prefix: 'Dr.',
+    name: 'Cláudio Lóssio',
+    specialty: 'Urologista',
+    image: '/profissionais/drlossio.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/drclaudiolossio/',
         external: true,
         icon: 'instagram',
       },
@@ -545,62 +629,6 @@ export const professionals: ProfessionalsItem[] = [
   },
   {
     prefix: 'Dra.',
-    name: 'Mayra Nicodemos',
-    specialty: 'Dermatologia e Tricologia',
-    image: '/profissionais/dramayra.png',
-    socialLinks: [
-      {
-        title: 'Instagram',
-        href: 'https://www.instagram.com/mayranicodemos.dermato/',
-        external: true,
-        icon: 'instagram',
-      },
-    ],
-  },
-  {
-    prefix: 'Dr.',
-    name: 'Bebeto Cardoso',
-    specialty: 'Psicologia',
-    image: '/profissionais/drbebeto.png',
-    socialLinks: [
-      {
-        title: 'Instagram',
-        href: 'https://www.instagram.com/refugio_mental1/',
-        external: true,
-        icon: 'instagram',
-      },
-    ],
-  },
-  {
-    prefix: 'Dra.',
-    name: 'Priscilla Lucena',
-    specialty: 'Otorrinolaringologia',
-    image: '/profissionais/drapriscilla.png',
-    socialLinks: [
-      {
-        title: 'Instagram',
-        href: 'https://www.instagram.com/p/C6wrZdBg64A/',
-        external: true,
-        icon: 'instagram',
-      },
-    ],
-  },
-  {
-    prefix: 'Dr.',
-    name: 'Lucas Araújo',
-    specialty: 'Medicina Esportiva',
-    image: '/profissionais/drlucas.png',
-    socialLinks: [
-      {
-        title: 'Instagram',
-        href: 'https://www.instagram.com/drlucasaaraujo/',
-        external: true,
-        icon: 'instagram',
-      },
-    ],
-  },
-  {
-    prefix: 'Dra.',
     name: 'Inajah Rangel',
     specialty: 'Medicina Estética',
     image: '/profissionais/drainajah.png',
@@ -622,20 +650,6 @@ export const professionals: ProfessionalsItem[] = [
       {
         title: 'Instagram',
         href: 'https://www.instagram.com/dr.joaquimleite/',
-        external: true,
-        icon: 'instagram',
-      },
-    ],
-  },
-  {
-    prefix: 'Dr.',
-    name: 'Wellington Furtado',
-    specialty: 'Oftalmologia',
-    image: '/profissionais/drwellington.png',
-    socialLinks: [
-      {
-        title: 'Instagram',
-        href: 'https://www.instagram.com/wellingtonbfurtado/',
         external: true,
         icon: 'instagram',
       },
@@ -678,20 +692,6 @@ export const professionals: ProfessionalsItem[] = [
       {
         title: 'Instagram',
         href: 'https://www.instagram.com/drdiegosampaio/',
-        external: true,
-        icon: 'instagram',
-      },
-    ],
-  },
-  {
-    prefix: 'Dra.',
-    name: 'Angelina Morais',
-    specialty: 'Ginecologia e Saúde da mulher',
-    image: '/profissionais/draangelina.png',
-    socialLinks: [
-      {
-        title: 'Instagram',
-        href: 'https://www.instagram.com/draangelinamorais/',
         external: true,
         icon: 'instagram',
       },
@@ -795,6 +795,48 @@ export const professionals: ProfessionalsItem[] = [
       },
     ],
   },
+  {
+    prefix: 'Dra.',
+    name: 'Clarisse Queiroz',
+    specialty: 'Cirurgiã Dentista',
+    image: '/profissionais/draclarisse.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/draclarissequeiroz/',
+        external: true,
+        icon: 'instagram',
+      },
+    ],
+  },
+  {
+    prefix: 'Dra.',
+    name: 'Iana Alencar',
+    specialty: 'Cirurgiã Dentista',
+    image: '/profissionais/draiana.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/_ianaalencar/',
+        external: true,
+        icon: 'instagram',
+      },
+    ],
+  },
+  {
+    prefix: 'Dr.',
+    name: 'Artúrio Petrônio',
+    specialty: 'Odontologista',
+    image: '/profissionais/drarturio.png',
+    socialLinks: [
+      {
+        title: 'Instagram',
+        href: 'https://www.instagram.com/arturiopetronio/',
+        external: true,
+        icon: 'instagram',
+      },
+    ],
+  }
 ]
 
 export const faqs = [

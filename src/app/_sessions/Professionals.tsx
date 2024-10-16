@@ -1,5 +1,3 @@
-import { useMemo } from 'react'
-
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -10,9 +8,6 @@ import { Text } from '@/components/text'
 import { professionals, socialLinks } from '@/config/site'
 
 export const ProfessionalsSession = () => {
-  const orderedProfessionals = useMemo(() => {
-    return professionals.sort((a, b) => a.name.localeCompare(b.name))
-  }, [])
 
   return (
     <SectionWrapper id="profissionais">
@@ -26,7 +21,7 @@ export const ProfessionalsSession = () => {
           </Headline>
         </header>
         <div className="w-full grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
-          {orderedProfessionals.map((professional) => {
+          {professionals.map((professional) => {
             const encodedUrl = encodeURIComponent(
               `Gostaria de agendar uma consulta com ${professional.prefix === 'Dr.' ? 'o' : 'a'} ${professional.prefix} ${professional.name} na clínica.`,
             )
