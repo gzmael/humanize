@@ -22,7 +22,7 @@ export const ProfessionalsSession = () => {
         <div className="w-full grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
           {professionals.map((professional) => {
             const encodedUrl = encodeURIComponent(
-              `Gostaria de agendar uma consulta com ${professional.prefix === 'Dr.' ? 'o' : 'a'} ${professional.prefix} ${professional.name} na clínica.`,
+              `Gostaria de agendar uma consulta com ${professional.prefix === 'Dr.' ? 'o' : 'a'} ${professional.prefix} ${professional.name} no centro médico.`,
             )
 
             return (

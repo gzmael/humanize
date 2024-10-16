@@ -2,7 +2,7 @@ import { getMetadata, getViewport } from '@/config/seo'
 
 export const metadata = getMetadata({
   title: 'Termos de uso',
-  description: 'Conheça os temos de uso da Humanize Clínica Médica.',
+  description: 'Conheça os temos de uso da Humanize Centro Médico.',
 })
 
 export const viewport = getViewport()

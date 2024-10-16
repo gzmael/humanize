@@ -51,7 +51,7 @@ export function SiteFooter() {
           </div>
         </div>
         <Text className="text-center text-humanize-950" scale="sm" as="span">
-          &copy; {currentYear} Humanize Clínica Médica.{' '}
+          &copy; {currentYear} Humanize Centro Médico.{' '}
           <br className="block md:hidden" /> Todos os direitos reservados.
         </Text>
       </div>

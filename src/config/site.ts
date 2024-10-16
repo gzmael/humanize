@@ -16,18 +16,15 @@ export const siteConfig = {
   name: 'Humanize Centro Médico',
   shortDescription: 'Humanize',
   description:
-    'A Humanize Clínica Médica, localizada em Brejo Santo, Ceará, oferece uma ampla gama de especialidades médicas e exames laboratoriais. Nossa clínica é dedicada a proporcionar cuidados de saúde de alta qualidade, com foco em exames precisos e atendimento especializado.',
+    'A Humanize Centro Médico, localizada em Brejo Santo, Ceará, oferece uma ampla gama de especialidades médicas e exames laboratoriais. Nosso centro médico é dedicado a proporcionar cuidados de saúde de alta qualidade, com foco em exames precisos e atendimento especializado.',
   url: 'https://humanizecentromedico.com.br',
   ogImage: 'https://humanizecentromedico.com.br/opengraph-image.png',
   keywords: [
-    'Clínica',
+    'Centro Médico',
     'Humanize',
-    'Clínica Médica',
     'Exames',
-    'Clínica de Exames',
     'Especialidades',
-    'Humanize Clínica Médica',
-    'Humanize Clínica de Exames',
+    'Humanize Centro Médico',
     'Humanize Especialidades',
     'Especialidades Médicas',
     'Brejo Santo',
@@ -326,7 +323,7 @@ export const structureGalery: StructureGaleryItem[] = [
     id: 3,
     src: '/galery/foto3.webp',
     large: '/galery/foto3.webp',
-    alt: 'Recepção da clínica',
+    alt: 'Recepção da centro médico',
     sizes: {
       md: {
         width: 662,
@@ -358,7 +355,7 @@ export const structureGalery: StructureGaleryItem[] = [
     id: 5,
     src: '/galery/foto5.webp',
     large: '/galery/foto5.webp',
-    alt: 'Recepção da clínica',
+    alt: 'Recepção do centro médico',
     sizes: {
       md: {
         width: 662,
@@ -843,12 +840,12 @@ export const faqs = [
   {
     question: 'Como agendar um exame?',
     answer:
-      'Para agendar um exame, você pode entrar em contato com a clínica pelo telefone (88) 99286-9798 ou (88) 2138-0294.',
+      'Para agendar um exame, você pode entrar em contato com o centro médico pelo telefone (88) 99286-9798 ou (88) 2138-0294.',
   },
   {
-    question: 'Quais são os horários de funcionamento da clínica?',
+    question: 'Quais são os horários de funcionamento do centro médico?',
     answer:
-      'A clínica funciona de segunda a sexta-feira, das 07:00 às 17:00 e sábado 07:00 às 12:00',
+      'O centro médico funciona de segunda a sexta-feira, das 07:00 às 17:00 e sábado 07:00 às 12:00',
   },
 ]
 
