@@ -57,12 +57,12 @@ export const siteConfig = {
     },
     {
       title: 'Termos de Uso',
-      href: '/termos',
+      href: '/termos-de-uso',
       onlyMobile: true,
     },
     {
       title: 'Privacidade',
-      href: '/privacidade',
+      href: '/politica-de-privacidade',
       onlyMobile: true,
     },
   ] satisfies MainNavItem[],
