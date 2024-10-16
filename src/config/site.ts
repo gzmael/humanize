@@ -457,7 +457,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dra.',
     name: 'Mayra Nicodemos',
     specialty: 'Dermatologia e Tricologia',
-    image: '/profissionais/dramayra.png',
+    image: '/profissionais/dramayra.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -471,7 +471,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dra.',
     name: 'Klarice Teles',
     specialty: 'Pediatra',
-    image: '/profissionais/draklarice.png',
+    image: '/profissionais/draklarice.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -491,7 +491,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dra.',
     name: 'Priscilla Lucena',
     specialty: 'Otorrinolaringologia',
-    image: '/profissionais/drapriscilla.png',
+    image: '/profissionais/drapriscilla.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -505,7 +505,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dra.',
     name: 'Angelina Morais',
     specialty: 'Ginecologia e Saúde da mulher',
-    image: '/profissionais/draangelina.png',
+    image: '/profissionais/draangelina.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -519,7 +519,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dr.',
     name: 'Wellington Furtado',
     specialty: 'Oftalmologia',
-    image: '/profissionais/drwellington.png',
+    image: '/profissionais/drwellington.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -533,7 +533,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dr.',
     name: 'Lucas Araújo',
     specialty: 'Medicina Esportiva',
-    image: '/profissionais/drlucas.png',
+    image: '/profissionais/drlucas.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -547,7 +547,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dra.',
     name: 'Joice Gomes',
     specialty: 'Nutricionista',
-    image: '/profissionais/drjoice.png',
+    image: '/profissionais/drjoice.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -561,7 +561,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dr.',
     name: 'Bebeto Cardoso',
     specialty: 'Psicologia',
-    image: '/profissionais/drbebeto.png',
+    image: '/profissionais/drbebeto.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -575,7 +575,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dr.',
     name: 'Cláudio Lóssio',
     specialty: 'Urologista',
-    image: '/profissionais/drlossio.png',
+    image: '/profissionais/drlossio.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -589,7 +589,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dra.',
     name: 'Yasmin Cruz',
     specialty: 'Cirurgiã Vascular',
-    image: '/profissionais/drayasmin.png',
+    image: '/profissionais/drayasmin.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -603,7 +603,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dra.',
     name: 'Kattyuse Santos',
     specialty: 'Psicóloga Clínica	',
-    image: '/profissionais/drakatyusse.png',
+    image: '/profissionais/drakatyusse.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -617,7 +617,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dra.',
     name: 'Caroline Morais',
     specialty: 'Mastologia e Cirurgia de mama',
-    image: '/profissionais/dracaroline.png',
+    image: '/profissionais/dracaroline.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -631,7 +631,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dra.',
     name: 'Inajah Rangel',
     specialty: 'Medicina Estética',
-    image: '/profissionais/drainajah.png',
+    image: '/profissionais/drainajah.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -645,7 +645,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dr.',
     name: 'Joaquim Leite',
     specialty: 'Ultrassonografista Geral e Doppler',
-    image: '/profissionais/drjoaquim.png',
+    image: '/profissionais/drjoaquim.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -659,7 +659,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dra.',
     name: 'Viviane Aquino',
     specialty: 'Psicóloga Clínica',
-    image: '/profissionais/draviviane.png',
+    image: '/profissionais/draviviane.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -673,7 +673,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dr.',
     name: 'Waydson Basílio',
     specialty: 'Ortopedia e Traumatologia',
-    image: '/profissionais/drwaydson.png',
+    image: '/profissionais/drwaydson.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -687,7 +687,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dr.',
     name: 'Diego Sampaio',
     specialty: 'Neurocirurgião',
-    image: '/profissionais/drdiego.png',
+    image: '/profissionais/drdiego.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -701,7 +701,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dra.',
     name: 'Soelígia Sampaio',
     specialty: 'Fisioterapeuta traumato-ortopédica',
-    image: '/profissionais/drasoeligia.png',
+    image: '/profissionais/drasoeligia.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -715,7 +715,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dra.',
     name: 'Ana Cecília',
     specialty: 'Estomaterapia',
-    image: '/profissionais/dracecilia.png',
+    image: '/profissionais/dracecilia.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -729,7 +729,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dra.',
     name: 'Bruna Matias',
     specialty: 'Gastroenterologista e Endoscopia',
-    image: '/profissionais/drabruna.png',
+    image: '/profissionais/drabruna.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -743,7 +743,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dr.',
     name: 'Gerônimo Neto',
     specialty: 'Psquiatra',
-    image: '/profissionais/drgeronimo.png',
+    image: '/profissionais/drgeronimo.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -757,7 +757,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dr.',
     name: 'Hugo Matias',
     specialty: 'Cirurgião Digestivo',
-    image: '/profissionais/drhugomatias.png',
+    image: '/profissionais/drhugomatias.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -771,7 +771,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dra.',
     name: 'Denize Milfont',
     specialty: 'Fonoaudióloga',
-    image: '/profissionais/dradenize.png',
+    image: '/profissionais/dradenize.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -785,7 +785,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dr.',
     name: 'Pedro Alencar',
     specialty: 'Cardiologista',
-    image: '/profissionais/drpedro.png',
+    image: '/profissionais/drpedro.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -799,7 +799,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dra.',
     name: 'Clarisse Queiroz',
     specialty: 'Cirurgiã Dentista',
-    image: '/profissionais/draclarisse.png',
+    image: '/profissionais/draclarisse.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -813,7 +813,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dra.',
     name: 'Iana Alencar',
     specialty: 'Cirurgiã Dentista',
-    image: '/profissionais/draiana.png',
+    image: '/profissionais/draiana.webp',
     socialLinks: [
       {
         title: 'Instagram',
@@ -827,7 +827,7 @@ export const professionals: ProfessionalsItem[] = [
     prefix: 'Dr.',
     name: 'Artúrio Petrônio',
     specialty: 'Odontologista',
-    image: '/profissionais/drarturio.png',
+    image: '/profissionais/drarturio.webp',
     socialLinks: [
       {
         title: 'Instagram',
