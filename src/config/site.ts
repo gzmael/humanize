@@ -836,7 +836,7 @@ export const professionals: ProfessionalsItem[] = [
         icon: 'instagram',
       },
     ],
-  }
+  },
 ]
 
 export const faqs = [

@@ -1,6 +1,6 @@
 import Image from 'next/image'
 
-import { getBlurImageAction, getRemoteBlurImageAction } from '@/actions/image-placeholder'
+import { getBlurImageAction } from '@/actions/image-placeholder'
 import { Gallery } from '@/components/gallery'
 import { Headline } from '@/components/headline'
 import { SectionWrapper } from '@/components/section-wrapper'

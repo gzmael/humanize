@@ -8,7 +8,6 @@ import { Text } from '@/components/text'
 import { professionals, socialLinks } from '@/config/site'
 
 export const ProfessionalsSession = () => {
-
   return (
     <SectionWrapper id="profissionais">
       <div className="container px-2 xl:px-0 py-10 md:py-20 flex flex-col gap-8 items-center justify-center">
