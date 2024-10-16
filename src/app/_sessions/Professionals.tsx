@@ -41,6 +41,7 @@ export const ProfessionalsSession = () => {
                     src={professional.image}
                     alt={`${professional.name} - ${professional.specialty}`}
                     fill
+                    loading="lazy"
                     sizes="(max-width: 768px) 100vw"
                     className="object-cover transition-all duration-500 group-hover:scale-110 pointer-events-none"
                   />

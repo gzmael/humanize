@@ -88,7 +88,7 @@ export const Hero = ({ doctorBlur }: HeroProps) => {
                 key={item.title}
                 className="flex flex-col justify-center items-center pointer-events-none"
               >
-                <Headline as="h3" size="xs" variant="white" weight="semibold">
+                <Headline as="span" size="xs" variant="white" weight="semibold">
                   {item.title}
                 </Headline>
                 <Text scale="sm" weight="regular" className="leading-snug">
@@ -124,7 +124,6 @@ export const Hero = ({ doctorBlur }: HeroProps) => {
               placeholder="blur"
               sizes="(min-width: 768px) 50vw, 100vw"
               className="object-contain object-bottom drop-shadow-2xl"
-              loading="lazy"
               quality={100}
               fill
             />
