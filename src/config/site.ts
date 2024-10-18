@@ -11,444 +11,6 @@ export const socialLinks = {
   whatsapp: 'https://wa.me/5588992869798',
 }
 
-export const siteConfig = {
-  lang: 'pt-br',
-  name: 'Humanize Centro Médico',
-  shortDescription: 'Humanize',
-  description:
-    'A Humanize Centro Médico, localizada em Brejo Santo, Ceará, oferece uma ampla gama de especialidades médicas e exames laboratoriais. Nosso centro médico é dedicado a proporcionar cuidados de saúde de alta qualidade, com foco em exames precisos e atendimento especializado.',
-  url: 'https://humanizecentromedico.com.br',
-  ogImage: 'https://humanizecentromedico.com.br/opengraph-image.png',
-  keywords: [
-    'Centro Médico',
-    'Humanize',
-    'Exames',
-    'Especialidades',
-    'Humanize Centro Médico',
-    'Humanize Especialidades',
-    'Especialidades Médicas',
-    'Brejo Santo',
-    'Ceará',
-  ],
-  mainNav: [
-    {
-      title: 'Sobre',
-      href: '/#sobre',
-    },
-    /*     {
-      title: 'Especialidades',
-      href: '/#especialidades',
-    }, */
-    {
-      title: 'Estrutura',
-      href: '/#estrutura',
-    },
-    {
-      title: 'Profissionais',
-      href: '/#profissionais',
-    },
-    {
-      title: 'FAQ',
-      href: '/#faq',
-    },
-    {
-      title: 'Contato',
-      href: '/#contato',
-    },
-    {
-      title: 'Termos de Uso',
-      href: '/termos-de-uso',
-      onlyMobile: true,
-    },
-    {
-      title: 'Privacidade',
-      href: '/politica-de-privacidade',
-      onlyMobile: true,
-    },
-  ] satisfies MainNavItem[],
-  footerNav: [
-    {
-      title: 'Seus Dados',
-      items: [
-        {
-          title: 'Termos de Uso',
-          href: '/termos-de-uso',
-          external: false,
-        },
-        {
-          title: 'Política de Privacidade',
-          href: '/politica-de-privacidade',
-          external: false,
-        },
-      ],
-    },
-  ] satisfies FooterItem[],
-  socialLinks: [
-    {
-      title: 'Instagram',
-      href: socialLinks.instagram,
-      external: true,
-      icon: 'instagram',
-    },
-    {
-      title: 'Facebook',
-      href: socialLinks.facebook,
-      external: true,
-      icon: 'facebook',
-    },
-    {
-      title: 'Whatsapp',
-      href: socialLinks.whatsapp,
-      external: true,
-      icon: 'whatsapp',
-    },
-  ],
-}
-
-export const humanizeData = [
-  {
-    title: '21',
-    description: 'Especialidades',
-  },
-  {
-    title: '888',
-    description: 'Exames Laboratoriais',
-  },
-  {
-    title: '+1800',
-    description: 'Atendimentos',
-  },
-  /*   {
-    title: '100%',
-    description: 'Em Satisfação',
-  }, */
-]
-
-export interface SpecialitiesItemProps {
-  title: string
-  description: string
-  icon: keyof typeof Icons
-}
-
-export const specialities: SpecialitiesItemProps[] = [
-  {
-    title: 'Cirurgia Vascular',
-    description:
-      'Especialidade médica que trata doenças das artérias, veias e vasos linfáticos, incluindo varizes, aneurismas e tromboses.',
-    icon: 'heart',
-  },
-  {
-    title: 'Dermatologia e Tricologia',
-    description:
-      'Tratamento de doenças da pele, cabelos e unhas, incluindo cuidados estéticos, como acne, psoríase, queda de cabelo e outras condições dermatológicas.',
-    icon: 'arm',
-  },
-
-  {
-    title: 'Estomaterapia',
-    description:
-      'Cuidados com estomas, feridas agudas e crônicas, e incontinências, promovendo a cicatrização e a qualidade de vida dos pacientes.',
-    icon: 'stomach',
-  },
-
-  {
-    title: 'Fisioterapia',
-    description:
-      'Reabilitação física para melhorar a mobilidade e a qualidade de vida, tratando lesões musculares, articulares e neurológicas.',
-    icon: 'physio',
-  },
-  {
-    title: 'Fonoaudiologia',
-    description:
-      'Diagnóstico e tratamento de distúrbios da comunicação e deglutição, incluindo problemas de fala, audição e linguagem.',
-    icon: 'ear',
-  },
-
-  {
-    title: 'Gastroenterologia',
-    description:
-      'Tratamento de doenças do sistema digestivo, incluindo estômago, intestinos, fígado e pâncreas, como gastrite, úlceras e hepatites.',
-    icon: 'gastro',
-  },
-
-  {
-    title: 'Ginecologia',
-    description:
-      'Cuidados com a saúde reprodutiva e sexual da mulher, incluindo prevenção e tratamento de doenças ginecológicas e acompanhamento pré-natal.',
-    icon: 'ginecology',
-  },
-
-  {
-    title: 'Mastologia',
-    description:
-      'Diagnóstico e tratamento de doenças das mamas, como câncer de mama, mastites e outras condições mamárias.',
-    icon: 'mastology',
-  },
-  {
-    title: 'Medicina Estética',
-    description:
-      'Procedimentos para melhorar a aparência e autoestima dos pacientes, incluindo tratamentos faciais, corporais e minimamente invasivos.',
-    icon: 'aesthetics',
-  },
-  {
-    title: 'Medicina Esportiva',
-    description:
-      'Prevenção e tratamento de lesões relacionadas à prática esportiva, promovendo a saúde e o desempenho dos atletas.',
-    icon: 'sport',
-  },
-  {
-    title: 'Neurologia',
-    description:
-      'Diagnóstico e tratamento de doenças do sistema nervoso, como epilepsia, esclerose múltipla, AVC e outras condições neurológicas.',
-    icon: 'brain',
-  },
-
-  {
-    title: 'Nutrição',
-    description:
-      'Orientação alimentar para promover a saúde e prevenir doenças, incluindo dietas personalizadas e acompanhamento nutricional.',
-    icon: 'nutri',
-  },
-
-  {
-    title: 'Oftalmologia',
-    description:
-      'Cuidados com a saúde dos olhos e tratamento de doenças oculares, como catarata, glaucoma, miopia e outras condições visuais.',
-    icon: 'eye',
-  },
-  {
-    title: 'Otorrinolaringologia',
-    description:
-      'Tratamento de doenças do ouvido, nariz e garganta, incluindo sinusite, otite, rinite e outras condições otorrinolaringológicas.',
-    icon: 'otorrino',
-  },
-  {
-    title: 'Pediatria',
-    description:
-      'Cuidados médicos para crianças e adolescentes, incluindo prevenção, diagnóstico e tratamento de doenças infantis.',
-    icon: 'pediatria',
-  },
-
-  {
-    title: 'Psicologia',
-    description:
-      'Apoio psicológico para promover a saúde mental e emocional, incluindo terapia individual, familiar e de casal.',
-    icon: 'psicologia',
-  },
-
-  {
-    title: 'Psiquiatria',
-    description:
-      'Diagnóstico e tratamento de transtornos mentais, como depressão, ansiedade, esquizofrenia e outras condições psiquiátricas.',
-    icon: 'head',
-  },
-
-  {
-    title: 'Saúde da Mulher',
-    description:
-      'Cuidados abrangentes para a saúde feminina em todas as fases da vida, incluindo prevenção e tratamento de doenças específicas da mulher.',
-    icon: 'women',
-  },
-  {
-    title: 'Traumatologia',
-    description:
-      'Tratamento de lesões traumáticas do sistema musculoesquelético, como fraturas, entorses, luxações e outras lesões ortopédicas.',
-    icon: 'trauma',
-  },
-  {
-    title: 'Urologia',
-    description:
-      'Tratamento de doenças do sistema urinário e reprodutor masculino, como infecções urinárias, cálculos renais e disfunções sexuais.',
-    icon: 'urolo',
-  },
-  {
-    title: 'Ultrassonografia e Doppler',
-    description:
-      'Exames de imagem para diagnóstico de diversas condições médicas, incluindo avaliação de órgãos internos e fluxo sanguíneo.',
-    icon: 'ultra',
-  },
-]
-
-export interface StructureGaleryItem {
-  id: number
-  src: string
-  large: string
-  alt: string
-  sizes: {
-    md: {
-      width: number
-      height: number
-    }
-    lg: {
-      width: number
-      height: number
-    }
-  }
-}
-
-export const structureGalery: StructureGaleryItem[] = [
-  {
-    id: 1,
-    src: '/galery/foto1.webp',
-    large: '/galery/foto1.webp',
-    alt: 'Sala de Espera',
-    sizes: {
-      md: {
-        width: 500,
-        height: 662,
-      },
-      lg: {
-        width: 1024,
-        height: 1355,
-      },
-    },
-  },
-  {
-    id: 2,
-    src: '/galery/foto2.webp',
-    large: '/galery/foto2.webp',
-    alt: 'Sala de Exames',
-    sizes: {
-      md: {
-        width: 500,
-        height: 662,
-      },
-      lg: {
-        width: 1024,
-        height: 1355,
-      },
-    },
-  },
-  {
-    id: 3,
-    src: '/galery/foto3.webp',
-    large: '/galery/foto3.webp',
-    alt: 'Recepção da centro médico',
-    sizes: {
-      md: {
-        width: 662,
-        height: 500,
-      },
-      lg: {
-        width: 1355,
-        height: 1024,
-      },
-    },
-  },
-  {
-    id: 4,
-    src: '/galery/foto4.webp',
-    large: '/galery/foto4.webp',
-    alt: 'Sala de Oftalmologia',
-    sizes: {
-      md: {
-        width: 500,
-        height: 662,
-      },
-      lg: {
-        width: 1024,
-        height: 1355,
-      },
-    },
-  },
-  {
-    id: 5,
-    src: '/galery/foto5.webp',
-    large: '/galery/foto5.webp',
-    alt: 'Recepção do centro médico',
-    sizes: {
-      md: {
-        width: 662,
-        height: 500,
-      },
-      lg: {
-        width: 1355,
-        height: 1024,
-      },
-    },
-  },
-  {
-    id: 6,
-    src: '/galery/foto6.webp',
-    large: '/galery/foto6.webp',
-    alt: 'Sala de Ortodontia',
-    sizes: {
-      md: {
-        width: 500,
-        height: 662,
-      },
-      lg: {
-        width: 1024,
-        height: 1355,
-      },
-    },
-  },
-  {
-    id: 7,
-    src: '/galery/foto7.webp',
-    large: '/galery/foto7.webp',
-    alt: 'Escada para segundo andar',
-    sizes: {
-      md: {
-        width: 662,
-        height: 500,
-      },
-      lg: {
-        width: 1355,
-        height: 1024,
-      },
-    },
-  },
-  {
-    id: 8,
-    src: '/galery/foto8.webp',
-    large: '/galery/foto8.webp',
-    alt: 'Sala de Cirurgia',
-    sizes: {
-      md: {
-        width: 662,
-        height: 500,
-      },
-      lg: {
-        width: 1355,
-        height: 1024,
-      },
-    },
-  },
-  {
-    id: 9,
-    src: '/galery/foto9.webp',
-    large: '/galery/foto9.webp',
-    alt: 'Sala de atendimento',
-    sizes: {
-      md: {
-        width: 500,
-        height: 662,
-      },
-      lg: {
-        width: 1024,
-        height: 1355,
-      },
-    },
-  },
-  /*  {
-    id: 10,
-    src: 'https://s6.imgcdn.dev/qt2IB.md.webp',
-    large: 'https://s6.imgcdn.dev/qt2IB.webp',
-    alt: 'Sala de atendimento',
-    sizes: {
-      md: {
-        width: 500,
-        height: 662,
-      },
-      lg: {
-        width: 1024,
-        height: 1355,
-      },
-    },
-  }, */
-]
-
 export const professionals: ProfessionalsItem[] = [
   {
     prefix: 'Dra.',
@@ -834,6 +396,446 @@ export const professionals: ProfessionalsItem[] = [
       },
     ],
   },
+]
+
+export const specialities: SpecialitiesItemProps[] = [
+  {
+    title: 'Cirurgia Vascular',
+    description:
+      'Especialidade médica que trata doenças das artérias, veias e vasos linfáticos, incluindo varizes, aneurismas e tromboses.',
+    icon: 'heart',
+  },
+  {
+    title: 'Dermatologia e Tricologia',
+    description:
+      'Tratamento de doenças da pele, cabelos e unhas, incluindo cuidados estéticos, como acne, psoríase, queda de cabelo e outras condições dermatológicas.',
+    icon: 'arm',
+  },
+
+  {
+    title: 'Estomaterapia',
+    description:
+      'Cuidados com estomas, feridas agudas e crônicas, e incontinências, promovendo a cicatrização e a qualidade de vida dos pacientes.',
+    icon: 'stomach',
+  },
+
+  {
+    title: 'Fisioterapia',
+    description:
+      'Reabilitação física para melhorar a mobilidade e a qualidade de vida, tratando lesões musculares, articulares e neurológicas.',
+    icon: 'physio',
+  },
+  {
+    title: 'Fonoaudiologia',
+    description:
+      'Diagnóstico e tratamento de distúrbios da comunicação e deglutição, incluindo problemas de fala, audição e linguagem.',
+    icon: 'ear',
+  },
+
+  {
+    title: 'Gastroenterologia',
+    description:
+      'Tratamento de doenças do sistema digestivo, incluindo estômago, intestinos, fígado e pâncreas, como gastrite, úlceras e hepatites.',
+    icon: 'gastro',
+  },
+
+  {
+    title: 'Ginecologia',
+    description:
+      'Cuidados com a saúde reprodutiva e sexual da mulher, incluindo prevenção e tratamento de doenças ginecológicas e acompanhamento pré-natal.',
+    icon: 'ginecology',
+  },
+
+  {
+    title: 'Mastologia',
+    description:
+      'Diagnóstico e tratamento de doenças das mamas, como câncer de mama, mastites e outras condições mamárias.',
+    icon: 'mastology',
+  },
+  {
+    title: 'Medicina Estética',
+    description:
+      'Procedimentos para melhorar a aparência e autoestima dos pacientes, incluindo tratamentos faciais, corporais e minimamente invasivos.',
+    icon: 'aesthetics',
+  },
+  {
+    title: 'Medicina Esportiva',
+    description:
+      'Prevenção e tratamento de lesões relacionadas à prática esportiva, promovendo a saúde e o desempenho dos atletas.',
+    icon: 'sport',
+  },
+  {
+    title: 'Neurologia',
+    description:
+      'Diagnóstico e tratamento de doenças do sistema nervoso, como epilepsia, esclerose múltipla, AVC e outras condições neurológicas.',
+    icon: 'brain',
+  },
+
+  {
+    title: 'Nutrição',
+    description:
+      'Orientação alimentar para promover a saúde e prevenir doenças, incluindo dietas personalizadas e acompanhamento nutricional.',
+    icon: 'nutri',
+  },
+
+  {
+    title: 'Oftalmologia',
+    description:
+      'Cuidados com a saúde dos olhos e tratamento de doenças oculares, como catarata, glaucoma, miopia e outras condições visuais.',
+    icon: 'eye',
+  },
+  {
+    title: 'Otorrinolaringologia',
+    description:
+      'Tratamento de doenças do ouvido, nariz e garganta, incluindo sinusite, otite, rinite e outras condições otorrinolaringológicas.',
+    icon: 'otorrino',
+  },
+  {
+    title: 'Pediatria',
+    description:
+      'Cuidados médicos para crianças e adolescentes, incluindo prevenção, diagnóstico e tratamento de doenças infantis.',
+    icon: 'pediatria',
+  },
+
+  {
+    title: 'Psicologia',
+    description:
+      'Apoio psicológico para promover a saúde mental e emocional, incluindo terapia individual, familiar e de casal.',
+    icon: 'psicologia',
+  },
+
+  {
+    title: 'Psiquiatria',
+    description:
+      'Diagnóstico e tratamento de transtornos mentais, como depressão, ansiedade, esquizofrenia e outras condições psiquiátricas.',
+    icon: 'head',
+  },
+
+  {
+    title: 'Saúde da Mulher',
+    description:
+      'Cuidados abrangentes para a saúde feminina em todas as fases da vida, incluindo prevenção e tratamento de doenças específicas da mulher.',
+    icon: 'women',
+  },
+  {
+    title: 'Traumatologia',
+    description:
+      'Tratamento de lesões traumáticas do sistema musculoesquelético, como fraturas, entorses, luxações e outras lesões ortopédicas.',
+    icon: 'trauma',
+  },
+  {
+    title: 'Urologia',
+    description:
+      'Tratamento de doenças do sistema urinário e reprodutor masculino, como infecções urinárias, cálculos renais e disfunções sexuais.',
+    icon: 'urolo',
+  },
+  {
+    title: 'Ultrassonografia e Doppler',
+    description:
+      'Exames de imagem para diagnóstico de diversas condições médicas, incluindo avaliação de órgãos internos e fluxo sanguíneo.',
+    icon: 'ultra',
+  },
+]
+
+export const siteConfig = {
+  lang: 'pt-br',
+  name: 'Humanize Centro Médico',
+  shortDescription: 'Humanize',
+  description:
+    'A Humanize Centro Médico, localizada em Brejo Santo, Ceará, oferece uma ampla gama de especialidades médicas e exames laboratoriais. Nosso centro médico é dedicado a proporcionar cuidados de saúde de alta qualidade, com foco em exames precisos e atendimento especializado.',
+  url: 'https://humanizecentromedico.com.br',
+  ogImage: 'https://humanizecentromedico.com.br/opengraph-image.png',
+  keywords: [
+    'Centro Médico',
+    'Humanize',
+    'Exames',
+    'Especialidades',
+    'Humanize Centro Médico',
+    'Humanize Especialidades',
+    'Especialidades Médicas',
+    'Brejo Santo',
+    'Ceará',
+    ...professionals.map((professional) => professional.specialty),
+    ...specialities.map((speciality) => speciality.title),
+  ],
+  mainNav: [
+    {
+      title: 'Sobre',
+      href: '/#sobre',
+    },
+    /*     {
+      title: 'Especialidades',
+      href: '/#especialidades',
+    }, */
+    {
+      title: 'Estrutura',
+      href: '/#estrutura',
+    },
+    {
+      title: 'Profissionais',
+      href: '/#profissionais',
+    },
+    {
+      title: 'FAQ',
+      href: '/#faq',
+    },
+    {
+      title: 'Contato',
+      href: '/#contato',
+    },
+    {
+      title: 'Termos de Uso',
+      href: '/termos-de-uso',
+      onlyMobile: true,
+    },
+    {
+      title: 'Privacidade',
+      href: '/politica-de-privacidade',
+      onlyMobile: true,
+    },
+  ] satisfies MainNavItem[],
+  footerNav: [
+    {
+      title: 'Seus Dados',
+      items: [
+        {
+          title: 'Termos de Uso',
+          href: '/termos-de-uso',
+          external: false,
+        },
+        {
+          title: 'Política de Privacidade',
+          href: '/politica-de-privacidade',
+          external: false,
+        },
+      ],
+    },
+  ] satisfies FooterItem[],
+  socialLinks: [
+    {
+      title: 'Instagram',
+      href: socialLinks.instagram,
+      external: true,
+      icon: 'instagram',
+    },
+    {
+      title: 'Facebook',
+      href: socialLinks.facebook,
+      external: true,
+      icon: 'facebook',
+    },
+    {
+      title: 'Whatsapp',
+      href: socialLinks.whatsapp,
+      external: true,
+      icon: 'whatsapp',
+    },
+  ],
+}
+
+export const humanizeData = [
+  {
+    title: '21',
+    description: 'Especialidades',
+  },
+  {
+    title: '888',
+    description: 'Exames Laboratoriais',
+  },
+  {
+    title: '+1800',
+    description: 'Atendimentos',
+  },
+  /*   {
+    title: '100%',
+    description: 'Em Satisfação',
+  }, */
+]
+
+export interface SpecialitiesItemProps {
+  title: string
+  description: string
+  icon: keyof typeof Icons
+}
+
+export interface StructureGaleryItem {
+  id: number
+  src: string
+  large: string
+  alt: string
+  sizes: {
+    md: {
+      width: number
+      height: number
+    }
+    lg: {
+      width: number
+      height: number
+    }
+  }
+}
+
+export const structureGalery: StructureGaleryItem[] = [
+  {
+    id: 1,
+    src: '/galery/foto1.webp',
+    large: '/galery/foto1.webp',
+    alt: 'Sala de Espera',
+    sizes: {
+      md: {
+        width: 500,
+        height: 662,
+      },
+      lg: {
+        width: 1024,
+        height: 1355,
+      },
+    },
+  },
+  {
+    id: 2,
+    src: '/galery/foto2.webp',
+    large: '/galery/foto2.webp',
+    alt: 'Sala de Exames',
+    sizes: {
+      md: {
+        width: 500,
+        height: 662,
+      },
+      lg: {
+        width: 1024,
+        height: 1355,
+      },
+    },
+  },
+  {
+    id: 3,
+    src: '/galery/foto3.webp',
+    large: '/galery/foto3.webp',
+    alt: 'Recepção da centro médico',
+    sizes: {
+      md: {
+        width: 662,
+        height: 500,
+      },
+      lg: {
+        width: 1355,
+        height: 1024,
+      },
+    },
+  },
+  {
+    id: 4,
+    src: '/galery/foto4.webp',
+    large: '/galery/foto4.webp',
+    alt: 'Sala de Oftalmologia',
+    sizes: {
+      md: {
+        width: 500,
+        height: 662,
+      },
+      lg: {
+        width: 1024,
+        height: 1355,
+      },
+    },
+  },
+  {
+    id: 5,
+    src: '/galery/foto5.webp',
+    large: '/galery/foto5.webp',
+    alt: 'Recepção do centro médico',
+    sizes: {
+      md: {
+        width: 662,
+        height: 500,
+      },
+      lg: {
+        width: 1355,
+        height: 1024,
+      },
+    },
+  },
+  {
+    id: 6,
+    src: '/galery/foto6.webp',
+    large: '/galery/foto6.webp',
+    alt: 'Sala de Ortodontia',
+    sizes: {
+      md: {
+        width: 500,
+        height: 662,
+      },
+      lg: {
+        width: 1024,
+        height: 1355,
+      },
+    },
+  },
+  {
+    id: 7,
+    src: '/galery/foto7.webp',
+    large: '/galery/foto7.webp',
+    alt: 'Escada para segundo andar',
+    sizes: {
+      md: {
+        width: 662,
+        height: 500,
+      },
+      lg: {
+        width: 1355,
+        height: 1024,
+      },
+    },
+  },
+  {
+    id: 8,
+    src: '/galery/foto8.webp',
+    large: '/galery/foto8.webp',
+    alt: 'Sala de Cirurgia',
+    sizes: {
+      md: {
+        width: 662,
+        height: 500,
+      },
+      lg: {
+        width: 1355,
+        height: 1024,
+      },
+    },
+  },
+  {
+    id: 9,
+    src: '/galery/foto9.webp',
+    large: '/galery/foto9.webp',
+    alt: 'Sala de atendimento',
+    sizes: {
+      md: {
+        width: 500,
+        height: 662,
+      },
+      lg: {
+        width: 1024,
+        height: 1355,
+      },
+    },
+  },
+  /*  {
+    id: 10,
+    src: 'https://s6.imgcdn.dev/qt2IB.md.webp',
+    large: 'https://s6.imgcdn.dev/qt2IB.webp',
+    alt: 'Sala de atendimento',
+    sizes: {
+      md: {
+        width: 500,
+        height: 662,
+      },
+      lg: {
+        width: 1024,
+        height: 1355,
+      },
+    },
+  }, */
 ]
 
 export const faqs = [
