@@ -555,8 +555,8 @@ export const siteConfig = {
     'Especialidades Médicas',
     'Brejo Santo',
     'Ceará',
-    ...professionals.map((professional) => professional.specialty),
-    ...specialities.map((speciality) => speciality.title),
+    ...professionals.map((professional) => `${professional.specialty} em Brejo Santo`),
+    ...specialities.map((speciality) => `${speciality.title} em Brejo Santo`),
   ],
   mainNav: [
     {
