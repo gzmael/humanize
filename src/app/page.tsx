@@ -19,9 +19,10 @@ import {
 import { getMetadata, getViewport } from '../config/seo'
 
 export const metadata = getMetadata({
-  title: 'Humanize Centro Médico',
+  title:
+    'Humanize Centro Médico | Especialidades Médicas, Cirurgiã, Exames Laboratoriais',
   description:
-    'Conheça a Humanize Centro Médico, seu centro médico de exames e especialidades médicas.',
+    'A Humanize Centro Médico, localizada em Brejo Santo, Ceará, oferece uma ampla gama de especialidades médicas e exames laboratoriais. Nosso centro médico é dedicado a proporcionar cuidados de saúde de alta qualidade, com foco em exames precisos e atendimento especializado. Agende pelo WhatsApp e siga-nos no Instagram para atualizações!',
 })
 
 export const viewport = getViewport()

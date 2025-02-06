@@ -75,7 +75,7 @@ export const Hero = ({ doctorBlur }: HeroProps) => {
             weight="semibold"
             className="w-full text-left"
           >
-            Cuidando com carinho e humanidade
+            Cuidando com carinho e humanidade em Brejo Santo
           </Headline>
           <Text scale="md" weight="regular" className="leading-snug">
             Oferecemos uma ampla gama de especialidades médicas, uma instalação

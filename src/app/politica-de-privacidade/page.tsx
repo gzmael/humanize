@@ -1,7 +1,8 @@
+import { Headline } from '@/components/headline'
 import { getMetadata, getViewport } from '@/config/seo'
 
 export const metadata = getMetadata({
-  title: 'Politica de privacidade',
+  title: 'Politica de privacidade | Humanize Centro Médico',
   description: 'Conheça a politica de privacidade da Humanize Centro Médico.',
 })
 
@@ -11,9 +12,13 @@ export default function PoliticaDePrivacidade() {
   return (
     <section className="w-full min-h-screen flex flex-col items-start justify-center px-2 py-10 md:py-0 overflow-hidden">
       <div className="mx-auto min-h-screen break-words px-5 pb-10 pt-24  text-dark-400 md:max-w-screen-md md:px-0 ">
-        <h2 className="font-sans tracking-wider font-bold text-4xl text-blue-600">
+        <Headline
+          as="h1"
+          className="font-sans tracking-wider font-bold text-4xl text-blue-600"
+        >
           Política de Privacidade e Proteção de Dados Pessoais
-        </h2>
+        </Headline>
+
         <div className="my-4 text-lg md:text-base">
           <h2 className="font-sans tracking-wider font-bold text-2xl text-blue-400 uppercase">
             Seção 1 - Informações Gerais

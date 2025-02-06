@@ -1,8 +1,10 @@
+import { Headline } from '@/components/headline'
 import { getMetadata, getViewport } from '@/config/seo'
 
 export const metadata = getMetadata({
-  title: 'Termos de uso',
-  description: 'Conheça os temos de uso da Humanize Centro Médico.',
+  title: 'Termos e condições gerais | Humanize Centro Médico',
+  description:
+    'Conheça os termos e condições gerais da Humanize Centro Médico.',
 })
 
 export const viewport = getViewport()
@@ -11,9 +13,13 @@ export default function TermosDeUso() {
   return (
     <section className="w-full min-h-screen flex flex-col items-start justify-center px-2 py-10 md:py-0 overflow-hidden">
       <div className="mx-auto min-h-screen break-words px-5 pb-10 pt-24  text-dark-400 md:max-w-screen-md md:px-0 ">
-        <h2 className="font-sans tracking-wider font-bold text-4xl text-blue-600">
+        <Headline
+          as="h1"
+          className="font-sans tracking-wider font-bold text-4xl text-blue-600"
+        >
           Termos e condições gerais
-        </h2>
+        </Headline>
+
         <p className="font-sans tracking-wider text-dark-400 font-normal my-4 py-4 text-lg md:text-base">
           Os serviços da Clinica Basilio Furtado são fornecidos pela pessoa
           jurídica com a seguinte Razão Social/nome: Clinica Basilio Furtado ,

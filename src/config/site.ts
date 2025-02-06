@@ -539,10 +539,10 @@ export const specialities: SpecialitiesItemProps[] = [
 
 export const siteConfig = {
   lang: 'pt-br',
-  name: 'Humanize Centro Médico',
-  shortDescription: 'Humanize',
+  name: 'Humanize Centro Médico | Especialidades Médicas, Cirurgiã, Exames Laboratoriais',
+  shortDescription: 'Humanize Centro Médico',
   description:
-    'A Humanize Centro Médico, localizada em Brejo Santo, Ceará, oferece uma ampla gama de especialidades médicas e exames laboratoriais. Nosso centro médico é dedicado a proporcionar cuidados de saúde de alta qualidade, com foco em exames precisos e atendimento especializado.',
+    'A Humanize Centro Médico, localizada em Brejo Santo, Ceará, oferece uma ampla gama de especialidades médicas e exames laboratoriais. Nosso centro médico é dedicado a proporcionar cuidados de saúde de alta qualidade, com foco em exames precisos e atendimento especializado. Agende pelo WhatsApp e siga-nos no Instagram para atualizações!',
   url: 'https://humanizecentromedico.com.br',
   ogImage: 'https://humanizecentromedico.com.br/opengraph-image.png',
   keywords: [
@@ -590,6 +590,13 @@ export const siteConfig = {
     'exames laboratoriais em Brejo Santo',
     'exame de sangue em Brejo Santo',
     'exame de DNA em Brejo Santo',
+    'Whatsapp',
+    'Instagram',
+    'instagram whatsapp',
+    'dr',
+    'dra',
+    'profissionais',
+    'especialidades médicas',
     ...professionals.map(
       (professional) => `${professional.specialty} em Brejo Santo`,
     ),
