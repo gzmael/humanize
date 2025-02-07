@@ -1,3 +1,4 @@
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { Open_Sans } from 'next/font/google'
 import localFont from 'next/font/local'
 import { cookies } from 'next/headers'
@@ -65,6 +66,9 @@ export default function RootLayout({ children }: RootLayoutProps) {
       lang="pt-BR"
       className={`scroll-smooth ${openSans.variable} ${carbona.variable}`}
     >
+      <head>
+        <link rel="canonical" href={process.env.NEXT_PUBLIC_APP_URL} />
+      </head>
       <body>
         <div className="relative flex min-h-screen flex-col">
           <SiteHeader />
@@ -76,6 +80,7 @@ export default function RootLayout({ children }: RootLayoutProps) {
         <TailwindIndicator />
         <Toaster />
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   )
