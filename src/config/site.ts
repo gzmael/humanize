@@ -923,3 +923,25 @@ export const partners: PartnersItem[] = [
     height: 150,
   },
 ]
+
+export const jsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'Humanize Centro Médico',
+  image: 'https://humanize.com.br/opengraph-image.png',
+  description:
+    'Humanize Centro Médico em Brejo Santo: Especialidades Médicas e Exames Laboratoriais. Cuidados de alta qualidade. Agende pelo WhatsApp e siga no Instagram.',
+  url: 'https://humanize.com.br',
+  logo: 'https://humanize.com.br/logo.png',
+  contactPoint: {
+    '@type': 'ContactPoint',
+    telephone: '+55-88-99286-9798',
+    contactType: 'Customer Service',
+    areaServed: 'BR',
+    availableLanguage: ['Portuguese'],
+  },
+  sameAs: [
+    'https://www.facebook.com/humanize.bs/',
+    'https://www.instagram.com/humanize.bs/',
+  ],
+}

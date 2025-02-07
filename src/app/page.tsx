@@ -4,6 +4,7 @@ import dynamic from 'next/dynamic'
 
 import { getBlurImageAction } from '@/actions/image-placeholder'
 import { ContactSectionLoading } from '@/components/loadings/ContactSectionLoading'
+import { jsonLd } from '@/config/site'
 
 import {
   AboutSession,
@@ -59,6 +60,10 @@ export default async function Home() {
       <ProfessionalsSession />
       <FAQSession />
       <ContactSection blur={blur} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
     </>
   )
 }
