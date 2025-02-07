@@ -539,10 +539,10 @@ export const specialities: SpecialitiesItemProps[] = [
 
 export const siteConfig = {
   lang: 'pt-br',
-  name: 'Humanize Centro Médico | Especialidades Médicas, Cirurgiã, Exames Laboratoriais',
+  name: 'Humanize Centro Médico | Especialidades Médicas e Exames',
   shortDescription: 'Humanize Centro Médico',
   description:
-    'A Humanize Centro Médico, localizada em Brejo Santo, Ceará, oferece uma ampla gama de especialidades médicas e exames laboratoriais. Nosso centro médico é dedicado a proporcionar cuidados de saúde de alta qualidade, com foco em exames precisos e atendimento especializado. Agende pelo WhatsApp e siga-nos no Instagram para atualizações!',
+    'Humanize Centro Médico em Brejo Santo: Especialidades Médicas e Exames Laboratoriais. Cuidados de alta qualidade. Agende pelo WhatsApp e siga no Instagram.',
   url: 'https://humanizecentromedico.com.br',
   ogImage: 'https://humanizecentromedico.com.br/opengraph-image.png',
   keywords: [
@@ -731,8 +731,8 @@ export const structureGalery: StructureGaleryItem[] = [
         height: 662,
       },
       lg: {
-        width: 1024,
-        height: 1355,
+        width: 626,
+        height: 828,
       },
     },
   },
@@ -747,8 +747,8 @@ export const structureGalery: StructureGaleryItem[] = [
         height: 662,
       },
       lg: {
-        width: 1024,
-        height: 1355,
+        width: 626,
+        height: 828,
       },
     },
   },
@@ -763,8 +763,8 @@ export const structureGalery: StructureGaleryItem[] = [
         height: 500,
       },
       lg: {
-        width: 1355,
-        height: 1024,
+        width: 883,
+        height: 668,
       },
     },
   },
@@ -779,8 +779,8 @@ export const structureGalery: StructureGaleryItem[] = [
         height: 662,
       },
       lg: {
-        width: 1024,
-        height: 1355,
+        width: 626,
+        height: 828,
       },
     },
   },
@@ -795,8 +795,8 @@ export const structureGalery: StructureGaleryItem[] = [
         height: 500,
       },
       lg: {
-        width: 1355,
-        height: 1024,
+        width: 883,
+        height: 668,
       },
     },
   },
@@ -811,8 +811,8 @@ export const structureGalery: StructureGaleryItem[] = [
         height: 662,
       },
       lg: {
-        width: 1024,
-        height: 1355,
+        width: 626,
+        height: 828,
       },
     },
   },
@@ -827,8 +827,8 @@ export const structureGalery: StructureGaleryItem[] = [
         height: 500,
       },
       lg: {
-        width: 1355,
-        height: 1024,
+        width: 883,
+        height: 668,
       },
     },
   },
@@ -843,8 +843,8 @@ export const structureGalery: StructureGaleryItem[] = [
         height: 500,
       },
       lg: {
-        width: 1355,
-        height: 1024,
+        width: 883,
+        height: 668,
       },
     },
   },
@@ -859,8 +859,8 @@ export const structureGalery: StructureGaleryItem[] = [
         height: 662,
       },
       lg: {
-        width: 1024,
-        height: 1355,
+        width: 626,
+        height: 828,
       },
     },
   },

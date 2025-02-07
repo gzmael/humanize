@@ -19,6 +19,7 @@ const openSans = Open_Sans({
   weight: ['400', '600', '700'],
   variable: '--font-openSans',
   preload: true,
+  display: 'swap',
 })
 
 export const viewport = getViewport()

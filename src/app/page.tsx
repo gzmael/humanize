@@ -19,10 +19,9 @@ import {
 import { getMetadata, getViewport } from '../config/seo'
 
 export const metadata = getMetadata({
-  title:
-    'Humanize Centro Médico | Especialidades Médicas, Cirurgiã, Exames Laboratoriais',
+  title: 'Humanize Centro Médico | Especialidades Médicas e Exames',
   description:
-    'A Humanize Centro Médico, localizada em Brejo Santo, Ceará, oferece uma ampla gama de especialidades médicas e exames laboratoriais. Nosso centro médico é dedicado a proporcionar cuidados de saúde de alta qualidade, com foco em exames precisos e atendimento especializado. Agende pelo WhatsApp e siga-nos no Instagram para atualizações!',
+    'Humanize Centro Médico em Brejo Santo: Especialidades Médicas e Exames Laboratoriais. Cuidados de alta qualidade. Agende pelo WhatsApp e siga no Instagram.',
 })
 
 export const viewport = getViewport()
