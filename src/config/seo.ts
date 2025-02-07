@@ -47,7 +47,7 @@ export const getMetadata = ({
       siteName: siteConfig.name,
       images: [
         {
-          url: '/opengraph-image.png',
+          url: `${process.env.NEXT_PUBLIC_APP_URL}/opengraph-image.png`,
           width: 1200,
           height: 630,
         },
@@ -59,7 +59,7 @@ export const getMetadata = ({
       description,
       images: [
         {
-          url: '/opengraph-image.png',
+          url: `${process.env.NEXT_PUBLIC_APP_URL}/opengraph-image.png`,
           width: 1200,
           height: 630,
         },
